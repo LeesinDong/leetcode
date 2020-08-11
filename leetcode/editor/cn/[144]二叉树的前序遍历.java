@@ -18,18 +18,20 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
-
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        LinkedList<Integer> output = new LinkedLIst<Integer>
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
