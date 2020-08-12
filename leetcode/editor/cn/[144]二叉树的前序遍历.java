@@ -30,17 +30,19 @@
  */
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
-        Stack<TreeNode> stack = new Stack();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
         LinkedList<Integer> output = new LinkedList<Integer>();
-        stack.push(root);
+        if (root == null) {
+            return null;
+        }
         while (!stack.isEmpty()) {
-            TreeNode pop = stack.pop();
-            output.add(pop.val);
-            if (pop.right != null) {
-                stack.push(pop.right);
+            TreeNode node = stack.pop();
+            output.add(node.val);
+            if (node.left != null) {
+                stack.push(node.left);
             }
-            if (pop.left != null) {
-                stack.push(pop.left);
+            if (node.right != null) {
+                stack.push(node.right);
             }
         }
         return output;

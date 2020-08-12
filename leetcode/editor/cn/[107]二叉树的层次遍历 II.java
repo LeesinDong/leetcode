@@ -37,16 +37,16 @@
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (root == null) {
-            return list;
+            return res;
         }
         while (!queue.isEmpty()) {
             int size = queue.size();
-            LinkedList<Integer> listInner = new LinkedList<Integer>();
+            ArrayList<Integer> list = new ArrayList<Integer>();
             while (size > 0) {
                 TreeNode node = queue.poll();
-                listInner.add(node.val);
+                list.add(node.val);
                 if (node.left != null) {
                     queue.offer(node.left);
                 }
@@ -55,9 +55,9 @@ class Solution {
                 }
                 size--;
             }
-            list.add(0, listInner);
+            res.add(0, list);
         }
-        return list;
+        return res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

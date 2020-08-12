@@ -36,7 +36,7 @@ class Solution {
         Stack<TreeNode> stack = new Stack<TreeNode>();
         LinkedList<Integer> output = new LinkedList<Integer>();
         if (root == null) {
-            return output;
+            return null;
         }
         stack.push(root);
         while (!stack.isEmpty()) {

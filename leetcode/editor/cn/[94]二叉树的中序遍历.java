@@ -35,9 +35,9 @@ class Solution {
             if (root != null) {
                 stack.push(root);
                 root = root.left;
-            } else {
+            }else{
                 root = stack.pop();
-                output.add(root.val);
+                output.addLast(root.val);
                 root = root.right;
             }
         }
