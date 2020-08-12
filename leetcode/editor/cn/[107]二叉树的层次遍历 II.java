@@ -23,32 +23,41 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
 //跟前序遍历的区别 1这里是queue，2这里是先左后右
 class Solution {
-    public List<List<Integer>> levelOrderBottom(TreeNode head) {
-       Queue<TreeNode> queue  = new ArrayDeque;
-        LinkedList<Integer> output = new LinkedList<Integer>();
-        queue.offer(head);
-        while (!queue.isEmpty) {
-            TreeNode node = queue.poll();
-            output.add(node);
-            if (node.left != null) {
-                queue.offer(node.left);
-            }
-            if (node.right != null) {
-                queue.offer(node.right);
-            }
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        if (root == null) {
+            return list;
         }
-        return output;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            LinkedList<Integer> listInner = new LinkedList<Integer>();
+            while (size > 0) {
+                TreeNode node = queue.poll();
+                listInner.add(node.val);
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+                size--;
+            }
+            list.add(0, listInner);
+        }
+        return list;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

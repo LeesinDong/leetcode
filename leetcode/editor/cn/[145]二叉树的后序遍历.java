@@ -17,28 +17,31 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
-//区别就是这里，这里是addFirst，所以就是栈如队列
-//也就是后续和前序的区别就是，这里是stack，前序是list
+//和前序的区别就
+// 1 这里是addFirst
+// 2 这里是先左后右
+//因为深度优先搜索后序遍历的顺序是从下到上、从左至右，所以需要将输出列表逆序输出。
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        Stack<Integer> output = new Stack<Integer>();
+        LinkedList<Integer> output = new LinkedList<Integer>();
         if (root == null) {
             return output;
         }
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
-            output.push(node.val);
+            output.addFirst(node.val);
             if (node.left != null) {
                 stack.push(node.left);
             }

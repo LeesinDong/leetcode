@@ -31,12 +31,4 @@ public class 二叉树前序遍历 {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
-    }
-}

@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
@@ -8,6 +7,10 @@ import java.util.Stack;
  * @date: Created in 2020/8/11 0011 8:34
  * @modified By:
  */
+//和前序的区别就
+// 1 这里是addFirst
+// 2 这里是先左后右
+//因为深度优先搜索后序遍历的顺序是从下到上、从左至右，所以需要将输出列表逆序输出。
 public class 二叉树的后序遍历 {
     public List<Integer> postorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();

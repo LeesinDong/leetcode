@@ -34,7 +34,6 @@ class Solution {
         while (!stack.isEmpty() || root != null) {
             if (root != null) {
                 stack.push(root);
-                //右边的进来还是从左边开始找
                 root = root.left;
             } else {
                 root = stack.pop();

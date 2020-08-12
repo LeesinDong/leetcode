@@ -14,9 +14,11 @@ public class 二叉树的中序遍历 {
         LinkedList<Integer> output = new LinkedList<Integer>();
         while (!stack.isEmpty() || root != null) {
             if (root != null) {
+                //1 一直往里面塞左边的，只要当前有节点，就把当前节点塞进去
                 stack.push(root);
                 root = root.left;
             } else {
+                //2 知道左边的没有了，这个时候弹出最下面的一个放进去，就是左，然后开始往右，如此往复
                 root = stack.pop();
                 output.add(root.val);
                 root = root.right;
