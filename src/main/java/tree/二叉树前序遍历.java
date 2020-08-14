@@ -17,6 +17,9 @@ public class 二叉树前序遍历 {
     public List<Integer> preorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack();
         LinkedList<Integer> output = new LinkedList<Integer>();
+        if (root == null) {
+            return null;
+        }
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode pop = stack.pop();
