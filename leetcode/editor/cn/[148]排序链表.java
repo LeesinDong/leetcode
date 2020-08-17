@@ -33,25 +33,24 @@ class Solution {
         ListNode mid = getMid(head);
         ListNode next = mid.next;
         mid.next = null;
-        ListNode listNode = mergeList(sortList(head), sortList(next));
+        ListNode listNode = merge2List(sortList(head), sortList(next));
         return listNode;
-
     }
 
     public static ListNode getMid(ListNode head) {
-        if (head==null){
+        if (head == null) {
             return null;
         }
         ListNode fast = head;
         ListNode slow = head;
-        while (fast.next != null && fast.next.next != null) {
+        if (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
         return slow;
     }
 
-    public static ListNode mergeList(ListNode head1, ListNode head2) {
+    public static ListNode merge2List(ListNode head1, ListNode head2) {
         if (head1 == null && head2 == null) {
             return null;
         }
@@ -62,14 +61,16 @@ class Solution {
             return head1;
         }
         ListNode head = null;
-        if (head1.val < head2.val) {
-            head = head1;
-            head.next = mergeList(head1.next, head2);
-        } else {
+        if (head1.val > head2.val) {
             head = head2;
-            head.next = mergeList(head2.next, head1);
+            head.next = merge2List(head2.next, head1);
+        } else {
+            head = head1;
+            head.next = merge2List(head1.next, head2);
         }
         return head;
     }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)

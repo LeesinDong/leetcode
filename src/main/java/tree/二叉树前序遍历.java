@@ -18,7 +18,7 @@ public class 二叉树前序遍历 {
         Stack<TreeNode> stack = new Stack();
         LinkedList<Integer> output = new LinkedList<Integer>();
         if (root == null) {
-            return null;
+            return output;
         }
         stack.push(root);
         while (!stack.isEmpty()) {

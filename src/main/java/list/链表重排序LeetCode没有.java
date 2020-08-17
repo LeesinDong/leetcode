@@ -19,7 +19,6 @@ public class 链表重排序LeetCode没有 {
         ListNode head2 = null;
         ListNode curl1 = null;
         ListNode curl2 = null;
-        //count从1开始
         int count = 1;
         while (head != null) {
             if (count % 2 == 1) {
@@ -39,8 +38,8 @@ public class 链表重排序LeetCode没有 {
                     curl2 = curl2.next;
                 }
             }
-            count++;
             head = head.next;
+            count++;
         }
         curl1.next = null;
         curl2.next = null;
@@ -60,7 +59,7 @@ public class 链表重排序LeetCode没有 {
     }
 
     public static ListNode mergeTwoList(ListNode head1, ListNode head2) {
-        if (head1 == null || head2 == null) {
+        if (head1 == null & head2 == null) {
             return null;
         }
         if (head1 == null) {
@@ -70,12 +69,12 @@ public class 链表重排序LeetCode没有 {
             return head1;
         }
         ListNode head = null;
-        if (head1.val < head2.val) {
-            head = head1;
-            head.next = mergeTwoList(head1.next, head2);
-        } else {
+        if (head1.val > head2.val) {
             head = head2;
             head.next = mergeTwoList(head2.next, head1);
+        } else {
+            head = head1;
+            head.next =  mergeTwoList(head1.next, head2);
         }
         return head;
     }
