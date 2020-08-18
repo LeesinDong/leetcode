@@ -8,7 +8,7 @@ class Solution {
         queue.offer(root);
         while (!queue.isEmpty()) {
             int size = queue.size();
-            LinkedList<Integer> list = new LinkedList<Integer>();
+            List<Integer> list = new LinkedList<Integer>();
             while (size > 0) {
                 TreeNode node = queue.poll();
                 list.add(node.val);
@@ -25,5 +25,6 @@ class Solution {
         return output;
     }
 }
+//levelOrderBottom
 //leetcode submit region end(Prohibit modification and deletion)
 //跟前序遍历的区别 1这里是queue，2这里是先左后右

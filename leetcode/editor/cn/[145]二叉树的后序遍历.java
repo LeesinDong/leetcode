@@ -1,14 +1,14 @@
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<TreeNode> ();
-        LinkedList<Integer> output = new LinkedList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        LinkedList<Integer> outpupt = new LinkedList<Integer>();
         if (root == null) {
-            return output;
+            return outpupt;
         }
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
-            output.addFirst(node.val);
+            outpupt.addFirst(node.val);
             if (node.left != null) {
                 stack.push(node.left);
             }
@@ -16,9 +16,10 @@ class Solution {
                 stack.push(node.right);
             }
         }
-        return output;
+        return outpupt;
     }
 }
+// postorderTraversal
 //leetcode submit region end(Prohibit modification and deletion)
 //和前序的区别就
 // 1 这里是addFirst

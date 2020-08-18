@@ -14,6 +14,7 @@ public class 二叉树的中序遍历 {
     public List<Integer> inorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();
         LinkedList<Integer> output = new LinkedList<Integer>();
+        //这里是或的关系，因为下面if else 都需要 一个往里面push，一个往外面pop
         while (!stack.isEmpty() || root != null) {
             if (root != null) {
                 //1 一直往里面塞左边的，只要当前有节点，就把当前节点塞进去

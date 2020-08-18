@@ -1,10 +1,10 @@
 class Solution {
     public int[] sortArray(int[] nums) {
         //快排
-        // sort(nums, 0, nums.length - 1);
+        sort(nums, 0, nums.length - 1);
         //归并
-        int[] swap = new int[nums.length];
-        partAndMerge(nums,0,nums.length-1,swap);
+        // int[] swap = new int[nums.length];
+        // partAndMerge(nums,0,nums.length-1,swap);
         return nums;
     }
 
@@ -24,9 +24,9 @@ class Solution {
             if (l >= r) {
                 break;
             }
-            int swap = arr[l];
+            int temp = arr[l];
             arr[l] = arr[r];
-            arr[r] = swap;
+            arr[r] = temp;
             if (arr[l] == pivot) {
                 r--;
             }
@@ -38,10 +38,10 @@ class Solution {
             l++;
             r--;
         }
-        if (left < r) {
+        if (r > left) {
             sort(arr, left, r);
         }
-        if (right > l) {
+        if (l < right) {
             sort(arr, l, right);
         }
 
