@@ -27,13 +27,13 @@ class Solution {
         }
 
         ListNode prev = head;
-        ListNode currnet = head.next;
+        ListNode current = head.next;
         prev.next = null;
-        while (currnet != null) {
-            ListNode next = currnet.next;
-            currnet.next = prev;
-            prev = currnet;
-            currnet = next;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
         }
         return prev;
     }

@@ -28,6 +28,7 @@ class Solution {
             return head;
         }
 
+        // 加入dummy
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         head = dummy;
@@ -38,7 +39,7 @@ class Solution {
         }
         ListNode prevM = head;
         ListNode mNode = head.next;
-        ListNode nNode = mNode;
+        ListNode nNode = head.next;
         ListNode postN = nNode.next;
 
         // 反转
@@ -49,9 +50,9 @@ class Solution {
             postN = next;
         }
 
-        // 反转整体
-        mNode.next = postN;
+        // 大反转
         prevM.next = nNode;
+        mNode.next = postN;
         return dummy.next;
     }
 }
