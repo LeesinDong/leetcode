@@ -22,15 +22,20 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode pre = null;
-        ListNode next = null;
-        while (head != null) {
-            next = head.next;
-            head.next = pre;
-            pre = head;
-            head = next;
+        if (head == null) {
+            return null;
         }
-        return pre;
+
+        ListNode prev = head;
+        ListNode currnet = head.next;
+        prev.next = null;
+        while (currnet != null) {
+            ListNode next = currnet.next;
+            currnet.next = prev;
+            prev = currnet;
+            currnet = next;
+        }
+        return prev;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
