@@ -8,7 +8,7 @@
 // 进阶: 
 //你可以迭代或递归地反转链表。你能否用两种方法解决这道题？ 
 // Related Topics 链表 
-// 👍 1158 👎 0
+// 👍 1457 👎 0
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -17,7 +17,9 @@
  * public class ListNode {
  *     int val;
  *     ListNode next;
- *     ListNode(int x) { val = x; }
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
@@ -29,13 +31,14 @@ class Solution {
         ListNode prev = head;
         ListNode current = head.next;
         prev.next = null;
+
         while (current != null) {
             ListNode next = current.next;
             current.next = prev;
             prev = current;
             current = next;
         }
-        return prev;
+        return prev
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

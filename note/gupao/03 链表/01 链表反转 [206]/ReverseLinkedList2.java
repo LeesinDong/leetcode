@@ -1,7 +1,3 @@
-package gupao.list;
-
-import list.ListNode;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {

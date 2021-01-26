@@ -1,17 +1,3 @@
-//反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。 
-//
-// 说明: 
-//1 ≤ m ≤ n ≤ 链表长度。 
-//
-// 示例: 
-//
-// 输入: 1->2->3->4->5->NULL, m = 2, n = 4
-//输出: 1->4->3->2->5->NULL 
-// Related Topics 链表 
-// 👍 646 👎 0
-
-
-//leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -28,19 +14,20 @@ class Solution {
             return head;
         }
 
-        // 加入dummy
+        // dummy 节点
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         head = dummy;
 
-        // 寻找m
+        // 找到m
+        // 为什么是1？因为只需要找到前一个
         for (int i = 1; i < m; i++) {
             head = head.next;
         }
-        ListNode prevM = head;
+        ListNode preM = head;
         ListNode mNode = head.next;
         ListNode nNode = head.next;
-        ListNode postN = nNode.next;
+        ListNode postN = mNode.next;
 
         // 反转
         for (int i = m; i < n; i++) {
@@ -50,8 +37,8 @@ class Solution {
             postN = next;
         }
 
-        // 大反转
-        prevM.next = nNode;
+        // 总体反转
+        preM.next = nNode;
         mNode.next = postN;
         return dummy.next;
     }
