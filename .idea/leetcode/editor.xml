@@ -99,11 +99,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[15]三数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[15]三数之和.java" />
+              <option name="questionId" value="15" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[162]寻找峰值.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[162]寻找峰值.java" />
               <option name="questionId" value="162" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[167]两数之和 II - 输入有序数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[167]两数之和 II - 输入有序数组.java" />
+              <option name="questionId" value="167" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[16]最接近的三数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[16]最接近的三数之和.java" />
+              <option name="questionId" value="16" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -160,6 +184,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[3]无重复字符的最长子串.java" />
               <option name="questionId" value="3" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[611]有效三角形的个数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[611]有效三角形的个数.java" />
+              <option name="questionId" value="611" />
             </LeetcodeEditor>
           </value>
         </entry>

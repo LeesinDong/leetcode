@@ -9,42 +9,31 @@ class Solution {
     }
 
     //快排
-    public  void sort(int[] arr, int left, int right) {
-        int l = left;
-        int r = right;
-        int mid = (left + right) / 2;
-        int pivot = arr[mid];
-        while (l < r) {
-            while (arr[l] < pivot) {
-                l++;
-            }
-            while (arr[r] > pivot) {
-                r--;
-            }
-            if (l >= r) {
-                break;
-            }
-            int temp = arr[l];
-            arr[l] = arr[r];
-            arr[r] = temp;
-            if (arr[l] == pivot) {
-                r--;
-            }
-            if (arr[r] == pivot) {
-                l++;
-            }
-        }
-        if (l == r) {
-            l++;
-            r--;
-        }
-        if (r > left) {
-            sort(arr, left, r);
-        }
-        if (l < right) {
-            sort(arr, l, right);
+    public  void sort(int[] arr, int start, int end) {
+        if (arr == null || arr.length == 0 || start >= end) {
+            return;
         }
 
+        int left = start;
+        int right = end;
+        int pivot = arr[start];
+        while (left <= right) {
+            while (left <= right && arr[left] < pivot) {
+                left++;
+            }
+            while (left <= right && arr[right] > pivot) {
+                right--;
+            }
+            if (left <= right) {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
+            }
+        }
+        sort(arr, start, right);
+        sort(arr, left, end);
     }
 
     //归并排序

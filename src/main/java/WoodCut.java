@@ -1,6 +1,8 @@
 import sun.jvmstat.perfdata.monitor.PerfStringConstantMonitor;
 import sun.security.util.Length;
 
+import javax.swing.plaf.nimbus.State;
+
 public class WoodCut {
     public static void main(String[] args) {
         int[] wood = {232,124,456};
@@ -15,14 +17,15 @@ public class WoodCut {
         int start = 0;
         int end = getMax(wood);
         int mid;
+
         while (start + 1 < end) {
             mid = start + (end - start) / 2;
             if (getSize(wood, mid) == target) {
                 return mid;
-            } else if (getSize(wood, mid) < target) {
-                end = mid;
-            } else {
+            } else if (getSize(wood, mid) >= target) {
                 start = mid;
+            } else {
+                end = mid;
             }
         }
 
@@ -34,23 +37,21 @@ public class WoodCut {
             return end;
         }
 
-        return 0;
+        return -1;
     }
 
-    private static int  getMax(int[] wood) {
+    public static int getMax(int[] wood) {
         int result = wood[0];
-
         for (int i = 0; i < wood.length; i++) {
-            if (result < wood[i]) {
-                result = wood[i];
+            if (result <= wood[i]) {
+                result  = wood[i];
             }
         }
         return result;
     }
 
-    private static int getSize(int[] wood, int length) {
+    public static int getSize(int [] wood, int length) {
         int result = 0;
-
         for (int i = 0; i < wood.length; i++) {
             result += wood[i] / length;
         }

@@ -1,7 +1,7 @@
 public class BasicBinarySearch {
     public static void main(String[] args) {
         int[] num = {1,4,7,9,10,14,16,20,56,89};
-        System.out.println(getIndex(num, 5));
+        System.out.println(getIndex(num, 89));
     }
 
     private static int getIndex(int[] num, int target) {
@@ -10,8 +10,9 @@ public class BasicBinarySearch {
         }
 
         int start = 0;
-        int end = num.length;
-        int mid = 0;
+        int end = num.length -1;
+        int mid;
+
         while (start + 1 < end) {
             mid = start + (end - start) / 2;
             if (num[mid] == target) {
@@ -23,11 +24,11 @@ public class BasicBinarySearch {
             }
         }
 
-        if (start == num[mid]) {
+        if (num[start] == target) {
             return start;
         }
 
-        if (end == num[mid]) {
+        if (num[end] == target) {
             return end;
         }
 
