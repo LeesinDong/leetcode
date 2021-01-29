@@ -1,27 +1,28 @@
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        LinkedList<Integer> outpupt = new LinkedList<Integer>();
         if (root == null) {
-            return outpupt;
+            return Collections.emptyList();
         }
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            outpupt.addFirst(node.val);
+
+        Stack<TreeNode> stack1 = new Stack<>();
+        Stack<TreeNode> stack2 = new Stack<>();
+        stack1.push(root);
+        while (!stack1.isEmpty()) {
+            TreeNode node = stack1.pop();
+            stack2.push(node);
             if (node.left != null) {
-                stack.push(node.left);
+                stack1.push(node.left);
             }
             if (node.right != null) {
-                stack.push(node.right);
+                stack1.push(node.right);
             }
         }
-        return outpupt;
+
+        List<Integer> result = new ArrayList<>();
+        while (!stack2.isEmpty()) {
+            result.add(stack2.pop().val);
+        }
     }
 }
 // postorderTraversal
 //leetcode submit region end(Prohibit modification and deletion)
-//和前序的区别就
-// 1 这里是addFirst
-// 2 这里是先左后右
-//因为深度优先搜索后序遍历的顺序是从下到上、从左至右，所以需要将输出列表逆序输出。

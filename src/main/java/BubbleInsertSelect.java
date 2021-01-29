@@ -48,12 +48,13 @@ public class BubbleInsertSelect {
     private static void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 1; j < arr.length; j++) {
-                if (arr[j] > arr[j -1]) {
+                if (arr[j] > arr[j - 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
                 }
             }
+
         }
     }
 
@@ -61,7 +62,7 @@ public class BubbleInsertSelect {
         for (int i = 1; i < arr.length; i++) {
             int j = i - 1;
             int insertNode = arr[i];
-            while (j >= 0 && arr[j] > insertNode) {
+            while (j >= 0 && insertNode < arr[j]) {
                 arr[j + 1] = arr[j];
                 j--;
             }

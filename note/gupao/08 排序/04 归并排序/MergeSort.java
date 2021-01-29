@@ -3,7 +3,7 @@ package gupao;
 public class SortEx {
 	
 	public static void main(String[] args) {
-		int[] array = new int[1000000];
+		int[] array = new int[100000];
 		
 		// bubble Sort 
 		long start1 = System.currentTimeMillis();
@@ -50,6 +50,18 @@ public class SortEx {
 		long end4 = System.currentTimeMillis();	
 		System.out.println("quick Sort->");
 		System.out.println(end4 - start4);
+		//merge sort
+		long start5 = System.currentTimeMillis();
+		for (int k = 0; k < 10; k++) {
+			for (int j = 0; j < array.length; j++) {
+				array[j] =(int)(Math.random() * 10000);
+			}
+			mergeSort(array);
+		}
+		long end5 = System.currentTimeMillis();	
+		System.out.println("merge Sort->");
+		System.out.println(end5 - start5);
+		
 	}
 	public static void bubbleSort(int[] array) {
 		int length = array.length;
@@ -93,42 +105,71 @@ public class SortEx {
 			}
 		}
 	}
+	//quick sort
 	public static void quickSort(int[] array) {
 		sort(array, 0, array.length - 1);
 	}
 	
 	public static void sort(int[] array, int start, int end) {
-		// 避免死循环
-		// >= ? 下面加入left到了end-1 ，一次循环会left++两次就会导致>end
 		if (start >= end) {
 			return;
 		}
-
 		int pivot = array[start];
 		int left = start;
 		int right = end;
-		// <= ? 只有>错开的时候才会出去，说明分成两份了，否则left right一起没分开
 		while (left <= right) {
-			// 1 找到左边第一个 >= pivot 的
 			while (left <= right && array[left] < pivot) {
 				left++;
 			}
-			// 2 找到右边第一个 <= pivot 的
 			while (left <= right && array[right] > pivot) {
 				right--;
 			}
-			// 3 交换 [左边第一个比pivot大的] [右边第一个比pivot小的]
 			if (left <= right) {
 				int temp = array[left];
 				array[left] = array[right];
 				array[right] = temp;
-				// 交换完了进行移动，开始下一轮
 				left++;
 				right--;
 			}
 		}
-		// 4 错位之后分成了两个，然后递归
 		sort(array, start, right);
 		sort(array, left, end);
+	}
+	
+	//merge Sort
+	public static void mergeSort(int[] array) {
+		int[] temp = new int[array.length];
+		mergeSortImpl(array, 0, array.length - 1, temp);
+	}
+	public static void mergeSortImpl(int[] array, int start, int end, int[] temp) {
+		if (start >= end) {
+			return;
+		}
+		int mid = (start + end) / 2;
+		mergeSortImpl(array, start, mid, temp);
+		mergeSortImpl(array, mid + 1, end, temp);
+		merge(array, start, mid, end, temp);
+	}
+	
+	public static void merge(int[] array, int start, int mid, int end, int[] temp) {
+		int left = start;
+		int right = mid + 1;
+		int index = start;
+		while (left <= mid && right <= end) {
+			if (array[left] < array[right]) {
+				temp[index++] = array[left++];
+			} else {
+				temp[index++] = array[right++];
+			}
+		}
+		while (left <= mid) {
+			temp[index++] = array[left++];
+		}
+		while (right <= end) {
+			temp[index++] = array[right++];
+		}
+		for (index = start; index <= end; index++) {
+			array[index]= temp[index];
+		}
 	}
 }

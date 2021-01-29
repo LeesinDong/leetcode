@@ -1,18 +1,22 @@
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        LinkedList<Integer> output = new LinkedList<Integer>();
-        while (!stack.isEmpty() || root != null) {
-            if (root != null) {
-                stack.push(root);
-                root = root.left;
-            } else {
-                root = stack.pop();
-                output.addLast(root.val);
-                root = root.right;
-            }
+        if (root == null) {
+            return Collections.emptyList();
         }
-        return output;
+
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+        List<Integer> result = new ArrayList<>();
+        while (current != null || !stack.isEmpty()) {
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
+            }
+            TreeNode treeNode = stack.pop();
+            result.add(treeNode.val);
+            current = treeNode.right;
+        }
+        return result;
      }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -1,10 +1,13 @@
 class Solution {
     public int[] sortArray(int[] nums) {
         //快排
-        sort(nums, 0, nums.length - 1);
+        // sort(nums, 0, nums.length - 1);
         //归并
-        // int[] swap = new int[nums.length];
-        // partAndMerge(nums,0,nums.length-1,swap);
+        // int[] temp = new int[array.length];
+        // mergeSortImpl(array, 0, array.length - 1, temp);
+
+        int[] swap = new int[nums.length];
+        mergeSortImpl(nums,0,nums.length-1,swap);
         return nums;
     }
 
@@ -16,12 +19,12 @@ class Solution {
 
         int left = start;
         int right = end;
-        int pivot = arr[start];
+        int pivote = arr[start];
         while (left <= right) {
-            while (left <= right && arr[left] < pivot) {
+            while (left <= right && arr[left] < pivote) {
                 left++;
             }
-            while (left <= right && arr[right] > pivot) {
+            while (left <= right && arr[right] > pivote) {
                 right--;
             }
             if (left <= right) {
@@ -37,46 +40,36 @@ class Solution {
     }
 
     //归并排序
-    public static void partAndMerge(int[] arr, int left, int right, int[] temp) {
-        if (left < right) {
-            int mid = (left + right) / 2;
-            partAndMerge(arr, left, mid, temp);
-            partAndMerge(arr, mid+1,right, temp);
-            merge(arr,left,mid,right,temp);
+    public static void mergeSortImpl(int[] arr, int start, int end, int[] temp) {
+        if (start >= end) {
+            return;
         }
+
+        int mid = (start + end) / 2;
+        mergeSortImpl(arr, start, mid, temp);
+        mergeSortImpl(arr, mid + 1, end, temp);
+        merge(arr, start, mid, end, temp);
     }
 
-    public static void merge(int[] arr, int left, int mid, int right, int[] temp) {
-        int i = left;
-        int j = mid+1;
-        int t = 0;
-        while (i <= mid && j <= right) {
-            if (arr[i] <=arr[j]) {
-                temp[t] = arr[i];
-                i++;
-                t++;
+    public static void merge(int[] arr, int start, int mid, int end, int[] temp) {
+        int left = start;
+        int index = start;
+        int right = mid + 1;
+        while (left <= mid && right <= end) {
+            if (arr[left] <= arr[right]) {
+                temp[index++] = arr[left++];
             } else {
-                temp[t] = arr[j];
-                j++;
-                t++;
+                temp[index++] = arr[right++];
             }
         }
-        while (i <= mid) {
-            temp[t] = arr[i];
-            i++;
-            t++;
+        while (left <= mid) {
+            temp[index++] = arr[left++];
         }
-        while (j <= right) {
-            temp[t] = arr[j];
-            j++;
-            t++;
+        while (right <= end) {
+            temp[index++] = arr[right++];
         }
-        int leftTemp = left;
-        t = 0;
-        while (leftTemp <= right) {
-            arr[leftTemp] = temp[t];
-            leftTemp++;
-            t++;
+        for (index = start; index <= end; index++) {
+            arr[index] = temp[index];
         }
     }
 }
