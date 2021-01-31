@@ -4,18 +4,13 @@ class Solution {
             return Collections.emptyList();
         }
 
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode current = root;
-        List<Integer> result = new ArrayList<>();
-        while (current != null || !stack.isEmpty()) {
-            while (current != null) {
-                stack.push(current);
-                current = current.left;
-            }
-            TreeNode treeNode = stack.pop();
-            result.add(treeNode.val);
-            current = treeNode.right;
-        }
+        List<Integer> left = inorderTraversal(root.left);
+        List<Integer> right = inorderTraversal(root.right);
+
+        List<Integer> result = new ArrayList<Integer>();
+        result.addAll(left);
+        result.add(root.val);
+        result.addAll(right);
         return result;
      }
 }

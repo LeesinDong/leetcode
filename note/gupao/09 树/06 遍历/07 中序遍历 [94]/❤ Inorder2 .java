@@ -26,6 +26,7 @@ class Solution {
         while (current != null || !stack.isEmpty()) {
             // current == null 没有左子 或者 没有右子
             while (current != null) {
+                // 这里push的可能是左子，可能是右子[第一次进来]
                 stack.push(current);
                 current = current.left;
             }

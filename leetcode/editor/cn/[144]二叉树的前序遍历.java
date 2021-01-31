@@ -19,20 +19,14 @@ class Solution {
             return Collections.emptyList();
         }
 
-        Stack<TreeNode> stack = new Stack<>();
-        List<Integer> result = new ArrayList<>();
-        stack.push(root);
+        List<Integer> left = preorderTraversal(root.left);
+        List<Integer> right = preorderTraversal(root.right);
 
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            result.add(node.val);
-            if (node.right != null) {
-                stack.push(node.right);
-            }
-            if (node.left != null) {
-                stack.push(node.left);
-            }
-        }
+        List<Integer> result = new ArrayList<Integer>();
+
+        result.add(root.val);
+        result.addAll(left);
+        result.addAll(right);
         return result;
     }
 }
