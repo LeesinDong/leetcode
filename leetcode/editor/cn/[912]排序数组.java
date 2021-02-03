@@ -1,7 +1,7 @@
 class Solution {
     public int[] sortArray(int[] nums) {
         //快排
-        // sort(nums, 0, nums.length - 1);
+        sort(nums, 0, nums.length - 1);
         //归并
         // int[] temp = new int[array.length];
         // mergeSortImpl(array, 0, array.length - 1, temp);
@@ -19,12 +19,13 @@ class Solution {
 
         int left = start;
         int right = end;
-        int pivote = arr[start];
+        int i = (start + end) / 2;
+        // int pivote = arr[(start + end) / 2];
         while (left <= right) {
-            while (left <= right && arr[left] < pivote) {
+            while (left <= right && arr[left] < arr[i]) {
                 left++;
             }
-            while (left <= right && arr[right] > pivote) {
+            while (left <= right && arr[right] > arr[i]) {
                 right--;
             }
             if (left <= right) {
