@@ -1,0 +1,24 @@
+public class Solution {
+    /**
+     * @param s: a string
+     * @return: an integer
+     */
+    public int lengthOfLongestSubstring(String s) {
+        // write your code here
+        Set<Character> set = new HashSet<>();
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int max = 0;
+        int right = 0;
+        for (int i = 0; i < s.length(); i++) {
+            // 从第一个字母开始 放入set，right指针往后没有重复就max增加
+            while (right < s.length() && !set.contains(s.charAt(right))) {
+                set.add(s.charAt(right++));
+                max = Math.max(max, right - i);
+            }
+            set.remove(s.charAt(i));
+        }
+        return max;
+    }
+}
