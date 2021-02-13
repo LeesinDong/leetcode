@@ -12,6 +12,7 @@ class Solution {
         int number = 0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
+                // 同一个小岛内第一次bfs全为true，后面再!visited[i][j]都是false，所以不会进去
                 if (grid[i][j] == '1' && !visited[i][j]) {
                     // 第一次 [0][0] bfs的时候就已经把整个二维数组中的 1 都标记为了true，
                     // 后面其他点都是!visited，所以只会bfs一次

@@ -91,14 +91,19 @@ public class NumberOfIsland2 {
 				for (int i = 0; i < 4; i++) {
 					int current_x = x + dx[i];
 					int current_y = y + dy[i];
+					// island[current_x][current_y] 上下左右，true则和自己有连接，是一个小岛，之前认亲过了。
 					if (current_x >= 0 && current_x < n && current_y >= 0 && current_y < m && island[current_x][current_y]) {
 						int nid = unionFind.convertedId(current_x, current_y, m);
 						int father = unionFind.find(id);
 						int nfather = unionFind.find(nid);
+						// 父亲不相等说明是不可达的，没有相认，现在是当做独立的小岛在做这个问题，需要相认，说明需要将两个小岛合并了。
+						// 即：上下左右点和xy 本身是一个小岛，但是并查集里面没有记录，所以并查集合并下。
 						if (father != nfather) {
 							count--;
 							unionFind.union(father, nfather);
 						}
+						// father 相等说明，之前连接过，之前已经验证过了，之前已经知道是一个小岛
+						// 即：和原来是一个点，(原来point(1,2), 现在又输入一个点(1,2))；
 					}
 				}
 				result.add(count);
