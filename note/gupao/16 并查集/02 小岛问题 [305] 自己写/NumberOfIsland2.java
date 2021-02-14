@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 
+// 结果 1122
 class Point {
 	int x;
 	int y;
@@ -67,8 +68,10 @@ public class NumberOfIsland2 {
 				father.put(parent_x, parent_y);
 			}
 		}
-		public int convertedId(int x, int y, int row) {
-			return x * row + y;
+		// 我认为这里应该是 column，因为这里其实是要一个最后的数字：行*每行多少+最后一行第几个。  不过为一个确定一个数字就行row也可以
+		// 原来：public int convertedId(int x, int y, int row) {
+		public int convertedId(int x, int y, int column) {
+			return x * column + y;
 		}
 	}
 	public List<Integer> numIslands(int n, int m, Point[] operators) {
@@ -87,13 +90,15 @@ public class NumberOfIsland2 {
 			if (!island[x][y]) {
 				island[x][y] = true;
 				count++;
-				int id = unionFind.convertedId(x, y, m);
+				// int id = unionFind.convertedId(x, y, m);
+				int id = unionFind.convertedId(x, y, n);
 				for (int i = 0; i < 4; i++) {
 					int current_x = x + dx[i];
 					int current_y = y + dy[i];
 					// island[current_x][current_y] 上下左右，true则和自己有连接，是一个小岛，之前认亲过了。
 					if (current_x >= 0 && current_x < n && current_y >= 0 && current_y < m && island[current_x][current_y]) {
-						int nid = unionFind.convertedId(current_x, current_y, m);
+						// int nid = unionFind.convertedId(current_x, current_y, m);
+						int nid = unionFind.convertedId(current_x, current_y, n);
 						int father = unionFind.find(id);
 						int nfather = unionFind.find(nid);
 						// 父亲不相等说明是不可达的，没有相认，现在是当做独立的小岛在做这个问题，需要相认，说明需要将两个小岛合并了。
