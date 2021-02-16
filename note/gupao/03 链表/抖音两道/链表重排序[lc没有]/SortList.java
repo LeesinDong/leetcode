@@ -11,27 +11,33 @@ import java.awt.event.HierarchyBoundsAdapter;
  * @modified By:
  */
 //leetcode 奇数位升序,偶数位降序链表排序
-public class 链表重排序LeetCode没有 {
+public class SortList {
 
     public static ListNode[] getLists(ListNode head) {
         if (head == null) {
             return null;
         }
+        // 两个头结点
         ListNode head1 = null;
         ListNode head2 = null;
+        // 两个指针，遍历用
         ListNode curl1 = null;
         ListNode curl2 = null;
+
+        // 第几位
         int count = 1;
         while (head != null) {
+            // 奇数位
             if (count % 2 == 1) {
-                if (curl1 == null) {
+                if (curl1 == null) { // 最开始情况
                     curl1 = head;
                     head1 = curl1;
                 } else {
-                    curl1.next = head;
-                    curl1 = curl1.next;
+                    curl1.next = head; //
+                    curl1 = curl1.next; // 遍历
                 }
             } else if (count % 2 == 0){
+                // 偶数位
                 if (curl2 == null) {
                     curl2 = head;
                     head2 = curl2;
@@ -104,6 +110,7 @@ public class 链表重排序LeetCode没有 {
         ListNode head = init();
         //拆分成奇数、偶数两个链表
         ListNode[] lists = getLists(head);
+
         //得到两个链表头结点
         ListNode head1 = lists[0];
         ListNode head2 = lists[1];
