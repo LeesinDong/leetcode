@@ -14,7 +14,7 @@ public class Solution {
         int[] answer = new int[count];
         // 中间值
         int number = nums[0];
-        // ******************第0个提前放进去
+        // ******************第0个提前放进去，为什么提前放进去？因为总要先有一个number，下面的number在最小面才answer[i] = number进行赋值
         answer[0] = number;
 
         // ******************第0个提前放进去，这里从1开始，因为 假如第一个4，number4，这个时候不应该再把4放到两个堆中，否则，相当于初始nums凭空多了一个nums[0]
