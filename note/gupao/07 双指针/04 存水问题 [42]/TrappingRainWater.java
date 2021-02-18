@@ -6,12 +6,16 @@ public int trap(int[] height) {
         int length = height.length;
         int left = 0;
         int right = length - 1;
+        // 左右最高的高度
+        // *****************高度不是0
         int leftHeight = height[left];
         int rightHeight = height[right];
         int sum = 0;
         while (left < right) {
+            // 左边小，不管中间有没有，右边一定被挡住，算左边的存水即可，反之亦然
             if (leftHeight < rightHeight) {
                 if (leftHeight > height[left + 1]) {
+                    // *********************leftHeight -
                     sum += leftHeight - height[left + 1];
                 } else {
                     leftHeight = height[left +1];

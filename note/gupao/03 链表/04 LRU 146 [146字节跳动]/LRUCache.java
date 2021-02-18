@@ -42,6 +42,7 @@ class LRUCache {
         // *************************get(key)
         if (get(key) != -1) {
             valNodeMap.get(key).value = value;
+            // **************************return别忘
             return;
         }
 

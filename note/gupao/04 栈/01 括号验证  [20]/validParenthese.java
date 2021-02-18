@@ -3,6 +3,7 @@ class Solution {
         if (s == null || s.length() == 0) {
             return true;
         }
+        // ******************** Character
         Stack<Character> stack = new Stack<>();
         for (char c: s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {

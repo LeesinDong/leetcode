@@ -9,6 +9,7 @@ class MinStack {
     }
 
     public void push(int x) {
+        // 分别 1.stack push 2minStack push
         stack.push(x);
         if (minStack.isEmpty() || x < minStack.peek()) {
             minStack.push(x);

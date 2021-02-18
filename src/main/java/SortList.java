@@ -23,59 +23,17 @@ public class SortList {
     }
 
     public static void main(String[] args) {
-        ListNode node = init();
-        ListNode[] lists = getLists(node);
-        ListNode list1 = lists[0];
-        ListNode list2 = lists[1];
-        list2 = reverseLsit(list2);
-        ListNode head = mergeList(list1, list2);
-        while (head != null) {
-            System.out.println(head.val);
-            head = head.next;
+        ListNode head = init();
+        ListNode[] lists = getLists(head);
+        ListNode head1 = lists[0];
+        ListNode head2 = lists[1];
+        head2 = reverseList(head2);
+        ListNode result = mergeList(head1, head2);
+        while (result != null) {
+            System.out.println(result.val);
+            result = result.next;
         }
     }
-
-    private static ListNode mergeList(ListNode head1, ListNode head2) {
-        if (head1 == null || head2 == null) {
-            return null;
-        }
-
-        if (head1 == null) {
-            return head2;
-        }
-
-        if (head2 == null) {
-            return head1;
-        }
-
-        ListNode head = null;
-        if (head1.val < head2.val) {
-           head = head1;
-            head.next = mergeList(head1.next, head2);
-        } else {
-            head = head2;
-            head.next = mergeList(head2.next, head1);
-        }
-        return head;
-    }
-
-    private static ListNode reverseLsit(ListNode head) {
-        if (head == null) {
-            return head;
-        }
-
-        ListNode pre = head;
-        ListNode current = head.next;
-        pre.next = null;
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = pre;
-            pre = current;
-            current = next;
-        }
-        return pre;
-    }
-
 
     private static ListNode[] getLists(ListNode head) {
         if (head == null) {
@@ -102,7 +60,7 @@ public class SortList {
                     head2 = curl2;
                 } else {
                     curl2.next = head;
-                    curl2 = curl1.next;
+                    curl2 = curl2.next;
                 }
             }
             count++;
@@ -113,5 +71,46 @@ public class SortList {
         return new ListNode[]{head1, head2};
     }
 
+    private static ListNode reverseList(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode pre = head;
+        ListNode current = pre.next;
+        pre.next = null;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = pre;
+            pre = current;
+            current = next;
+        }
+        return pre;
+    }
+
+    private static ListNode mergeList(ListNode head1, ListNode head2) {
+        if (head1 == null && head2 == null) {
+            return null;
+        }
+
+        if (head1 == null) {
+            return head2;
+        }
+
+        if (head2 == null) {
+            return head1;
+        }
+
+        ListNode head = null;
+        if (head1.val < head2.val) {
+            head = head1;
+            head.next = mergeList(head1.next, head2);
+        } else {
+            head = head2;
+            head.next = mergeList(head2.next, head1);
+        }
+        return head;
+    }
 
 }
+

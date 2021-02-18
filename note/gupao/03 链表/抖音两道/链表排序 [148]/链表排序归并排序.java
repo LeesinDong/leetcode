@@ -23,6 +23,7 @@ public class 链表排序归并排序 {
     public static ListNode getMid(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
+        // fast.next.next != null 不是用来判空的，用来fast到了最后一个slow就是中间点，所以是跳出循环的条件
         while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;

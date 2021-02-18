@@ -5,56 +5,59 @@ import javax.swing.plaf.nimbus.State;
 
 public class WoodCut {
     public static void main(String[] args) {
-        int[] wood = {232,124,456};
-        System.out.println(WoodCut.getLength(wood, 7));
+        int[] L = {232,124,456};
+        System.out.println(new WoodCut().woodCut(L, 7));
     }
 
-    public static int getLength(int[] wood, int target) {
+    public int woodCut(int[] wood, int k) {
         if (wood == null || wood.length == 0) {
             return -1;
         }
 
         int start = 0;
         int end = getMax(wood);
-        int mid;
-
+        int mid = 0;
         while (start + 1 < end) {
             mid = start + (end - start) / 2;
-            if (getSize(wood, mid) == target) {
-                return mid;
-            } else if (getSize(wood, mid) >= target) {
+            if (getPeices(wood, mid) >= k) {
                 start = mid;
             } else {
                 end = mid;
             }
         }
 
-        if (getSize(wood, start) >= target) {
-            return start;
+        if (getPeices(wood, end) >= k) {
+            return end;
         }
 
-        if (getSize(wood, end) >= target) {
-            return end;
+        if (getPeices(wood, start) >= k) {
+            return start;
         }
 
         return -1;
     }
 
-    public static int getMax(int[] wood) {
-        int result = wood[0];
-        for (int i = 0; i < wood.length; i++) {
-            if (result <= wood[i]) {
-                result  = wood[i];
-            }
+    private int getPeices(int[] wood, int length) {
+        if (wood == null || wood.length == 0) {
+            return -1;
+        }
+
+        int result = 0;
+        for (int i : wood) {
+            result += i / length;
         }
         return result;
     }
 
-    public static int getSize(int [] wood, int length) {
-        int result = 0;
-        for (int i = 0; i < wood.length; i++) {
-            result += wood[i] / length;
+    private int getMax(int[] wood) {
+        int l = wood[0];
+        for (int i : wood) {
+            if (l <= i) {
+                l = i;
+            }
         }
-        return result;
+        return l;
     }
+
+
 }
