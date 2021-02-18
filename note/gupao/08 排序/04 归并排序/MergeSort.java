@@ -20,6 +20,7 @@ public class SortEx {
 	public static void merge(int[] array, int start, int mid, int end, int[] temp) {
 		int left = start;
 		int right = mid + 1;
+		// **********************这里是start，不是0
 		int index = start;
 		while (left <= mid && right <= end) {
 			if (array[left] < array[right]) {
