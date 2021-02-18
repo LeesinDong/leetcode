@@ -13,7 +13,9 @@ public int trap(int[] height) {
         int sum = 0;
         while (left < right) {
             // 左边小，不管中间有没有，右边一定被挡住，算左边的存水即可，反之亦然
+            // ********************if
             if (leftHeight < rightHeight) {
+                // ************************left + 1
                 if (leftHeight > height[left + 1]) {
                     // *********************leftHeight -
                     sum += leftHeight - height[left + 1];

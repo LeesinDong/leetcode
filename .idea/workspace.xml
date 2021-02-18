@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WoodCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WoodCut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1oV9AVQIsVndt9SUB34H4E3zE6D" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,14 +46,41 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/note/gupao/17 动态规划/06 回文分割[132字节跳动]" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\work_space\leetcode\note\gupao\17 动态规划\06 回文分割[132字节跳动]" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WoodCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WoodCut" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WoodCut" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,8 +95,18 @@
       <workItem from="1613360915267" duration="4982000" />
       <workItem from="1613369125397" duration="349000" />
       <workItem from="1613369601696" duration="718000" />
-      <workItem from="1613370349521" duration="6688000" />
+      <workItem from="1613370349521" duration="6901000" />
+      <workItem from="1613623371800" duration="1373000" />
+      <workItem from="1613624779203" duration="4039000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <created>1613383953365</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613383953365</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +123,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
