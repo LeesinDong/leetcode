@@ -1,10 +1,7 @@
 import com.sun.org.apache.bcel.internal.generic.F2I;
 import com.sun.xml.internal.ws.util.ReadAllStream;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class KuaiShouEx2 {
     public static void main(String[] args) {
@@ -20,21 +17,19 @@ public class KuaiShouEx2 {
         list.add("v8");
         list.add("v9");
 
-        List<String> result = getRecommendedList(list, 4);
-        for (String s : result) {
-            System.out.println(s);
-        }
+        List<String> result = getRecommendList(list, 4);
+        result.forEach(System.out::println);
     }
 
-    private static List<String> getRecommendedList(List<String> picAndVideoList, int interval) {
-        if (picAndVideoList == null || picAndVideoList.size() == 0) {
-            return null;
+    private static List<String> getRecommendList(List<String> picAndVideoList, int interval) {
+        if (picAndVideoList == null || picAndVideoList.size() ==0) {
+            return Collections.emptyList();
         }
 
-        boolean firstPic = false;
-        int index = 0;
         Queue<String> videoQueue = new LinkedList<>();
         Queue<String> picQueue = new LinkedList<>();
+        boolean firstPic = false;
+        int index = 0;
         List<String> result = new ArrayList<>();
 
         while (!firstPic && index < picAndVideoList.size()) {
@@ -66,22 +61,14 @@ public class KuaiShouEx2 {
             }
         }
 
-        while (!videoQueue.isEmpty()) {
-            result.add(videoQueue.poll());
-        }
-
-        while (!picQueue.isEmpty() && currentSize >= interval) {
-            result.add(picQueue.poll());
-        }
-
         return result;
     }
 
     private static boolean isVideo(String s) {
-        if (s.indexOf("v") != -1) {
+        if (s.indexOf('v') != -1) {
             return true;
         } else {
             return false;
-        }
-    }
+
+        }    }
 }

@@ -28,6 +28,7 @@ class Solution {
         ListNode postN = nNode.next;
         // nNode => prev;
         // postN => current
+        // ***************这里不是while(xxx != null);
         for(int i = m; i < n; i++) {
             /**
             ListNode next = current.next;
