@@ -15,6 +15,7 @@ public class Codec {
             return "{}";
         }
 
+        // 树结构装载到list
         ArrayList<TreeNode> list = new ArrayList<>();
         list.add(root);
         // [1, 2, 3, null, null, 4, 5, null, null, null, null]
@@ -32,9 +33,11 @@ public class Codec {
         while (list.get(list.size() - 1) == null) {
             list.remove(list.size() - 1);
         }
-        // {1,2,3,#,#,4,5}
+
+        // 根据list进行序列化 {1,2,3,#,#,4,5}
         StringBuilder sb = new StringBuilder("{");
-        sb.append(list.get(0).val);
+        // **************************************val
+        sb.append(list.get(0).val);//第一个先append，因为下面前面会append,
         for (int i = 1; i < list.size(); i++) {
             if (list.get(i) == null) {
                 sb.append(",").append("#");
@@ -55,29 +58,34 @@ public class Codec {
         // String[] data = 1 2 3 # # 4 5 ，去掉了 {} 第一个和最后一个
         String[] arr = data.substring(1, data.length() - 1).split(",");
         boolean isLeft = true;
-        // 为什么不能是queue，因为下面的某个要重复的用
-        List<TreeNode> queue = new ArrayList<>();
+        // 为什么不能是queue，因为下面的某个要重复的用，用来保存根节点的。
+        List<TreeNode> list = new ArrayList<>();
         TreeNode node = new TreeNode(Integer.parseInt(arr[0]));
-        queue.add(node);
+        list.add(node);
         int index = 0;
 
+        // ***********************从第一个开始
         for (int i = 1; i < arr.length; i++) {
+            // 放入左右
             if (!"#".equals(arr[i])) {
+                // *****************************注意这里
                 TreeNode treeNode = new TreeNode(Integer.parseInt(arr[i]));
                 if (isLeft) {
-                    queue.get(index).left = treeNode;
+                    list.get(index).left = treeNode;
                 } else {
-                    queue.get(index).right = treeNode;
+                    list.get(index).right = treeNode;
                 }
-                queue.add(treeNode);
+                list.add(treeNode);
             }
 
+            // 到了右边 该下一个根节点了
             if (!isLeft) {
                 index++;
             }
             isLeft = !isLeft;
         }
-        return queue.get(0);
+        // 返回大根
+        return list.get(0);
     }
 }
 

@@ -66,6 +66,7 @@ public class SortList {
             count++;
             head = head.next;
         }
+
         curl1.next = null;
         curl2.next = null;
         return new ListNode[]{head1, head2};

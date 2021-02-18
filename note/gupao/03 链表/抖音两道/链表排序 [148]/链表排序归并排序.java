@@ -32,6 +32,7 @@ public class 链表排序归并排序 {
     }
 
     public static ListNode mergeList(ListNode head1, ListNode head2) {
+        // ******************** &&
         if (head1 == null && head2 == null) {
             return null;
         }

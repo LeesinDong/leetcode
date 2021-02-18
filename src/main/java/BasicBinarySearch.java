@@ -8,31 +8,31 @@ public class BasicBinarySearch {
         System.out.println(new BasicBinarySearch().getIndex(num, 89));
     }
 
-    private int getIndex(int[] num, int target) {
-       if (num == null || num.length == 0) {
-           return -1;
-       }
+    private int getIndex(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
 
-       int start = 0;
-       int end = num.length - 1;
-       int mid = 0;
-       while (start + 1 < end) {
-           mid = start + (end - start) / 2;
-           if (num[mid] == target) {
-               return mid;
-           }
-           if (num[mid] <= target) {
-               start = mid;
-           } else {
-               end = mid;
-           }
-       }
+        int start = 0;
+        int end = nums.length;
+        int mid = 0;
+        while (start + 1 < end) {
+            mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+            if (nums[mid] > target) {
+                end = mid;
+            } else {
+                start = mid;
+            }
+        }
 
-        if (num[start] == target) {
+        if (nums[start] == target) {
             return start;
         }
 
-        if (num[end] == target) {
+        if (nums[end] == target) {
             return end;
         }
 
