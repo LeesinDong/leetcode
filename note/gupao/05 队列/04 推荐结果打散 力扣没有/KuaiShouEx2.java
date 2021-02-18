@@ -17,12 +17,19 @@ public class KuaiShouEx2 {
 		picAndVideoList.add("p_7");
 		picAndVideoList.add("v_8");
 		picAndVideoList.add("v_9");
-		List<String> result = new KuaiShouEx2().getRecommendenResult(picAndVideoList, 4);
+		// v_0
+		// v_1
+		// v_2
+		// v_6
+		// p_3
+		// v_8
+		// v_9
+		List<String> result = new KuaiShouEx2().getRecommendedList(picAndVideoList, 4);
 		for (int i = 0; i < result.size(); i++) {
 			System.out.println(result.get(i));
 		}
 	}
-	public List<String> getRecommendenResult(List<String> picAndVideo, int maxInterval) {
+	public List<String> getRecommendedList(List<String> picAndVideo, int maxInterval) {
 		List<String> result = new ArrayList<>();
 		if (picAndVideo == null || picAndVideo.size() == 0) {
 			return result;
@@ -52,14 +59,17 @@ public class KuaiShouEx2 {
 			}
 			index++;
 		}
-		// 超过片段往里面插
-		int currentSize = result.size();
+		// 超过视频片段往里面插
+		// **********************result.size()
+		int currentSize = result.size();//这里是为了插入第一张图片，如果之前result里面的已经超过了间隔的话
+		// **********************!
 		while(!videoQueue.isEmpty() && !picQueue.isEmpty()) {
 			if (currentSize >= maxInterval) {
 				result.add(picQueue.poll());
-				currentSize = 0;
+				currentSize = 0;//间隔计数清零
 			} else {
 				result.add(videoQueue.poll());
+				// ***************************别忘了
 				currentSize++;
 			}
 		}
@@ -69,7 +79,7 @@ public class KuaiShouEx2 {
 		while(!videoQueue.isEmpty()) {
 			result.add(videoQueue.poll());
 		}
-		// 只有图片了，到达临界点，插
+		// 只有图片了，并且到达该插图片的临界点，插图片
 		if(currentSize >= maxInterval && !picQueue.isEmpty()) {
 			result.add(picQueue.poll());
 		}

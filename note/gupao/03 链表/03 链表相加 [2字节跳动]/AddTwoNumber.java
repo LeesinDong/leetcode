@@ -21,6 +21,7 @@ class Solution {
         ListNode pre = head;
         while (l1 != null && l2 != null) {
             int number = l1.val + l2.val + carry;
+            // ***************************
             carry = number / 10;
             ListNode node = new ListNode(number % 10);
             pre.next = node;

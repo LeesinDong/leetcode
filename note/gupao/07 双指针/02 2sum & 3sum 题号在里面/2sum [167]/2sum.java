@@ -12,6 +12,7 @@ class Solution {
             } else if (nums[start] + nums[end] > target) {
                 end--;
             } else {
+                // 因为结果是 + 1的
                 result[0] = start + 1;
                 result[1] = end + 1;
                 break;

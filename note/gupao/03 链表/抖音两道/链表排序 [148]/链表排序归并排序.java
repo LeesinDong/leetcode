@@ -8,23 +8,22 @@ package list;
  */
 public class 链表排序归并排序 {
     public ListNode sortList(ListNode head) {
+        // **************** 别忘了 head.next == null 只有一个head不需要排序！！！！，否则递归出不来了
         if (head == null || head.next == null) {
             return head;
         }
         ListNode mid = getMid(head);
         ListNode next = mid.next;
         mid.next = null;
+        // ****************** 核心就这一步
         ListNode listNode = mergeList(sortList(head), sortList(next));
         return listNode;
-
     }
 
     public static ListNode getMid(ListNode head) {
-        if (head==null){
-            return null;
-        }
         ListNode fast = head;
         ListNode slow = head;
+        // fast.next.next != null 不是用来判空的，用来fast到了最后一个slow就是中间点，所以是跳出循环的条件
         while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;

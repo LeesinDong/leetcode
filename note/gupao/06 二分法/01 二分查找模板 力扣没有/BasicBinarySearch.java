@@ -10,6 +10,7 @@ public class BasicBinarySearch {
 			return -1;
 		}
 		int start = 0;
+		// **************************注意end长度
 		int end = num.length - 1;
 		int mid;
 		// 有时候是奇数有时候是偶数
@@ -24,7 +25,8 @@ public class BasicBinarySearch {
 			mid = start + (end - start) / 2;
 			if (num[mid] == target) {
 				return mid;
-			} else if(num[mid] > target) {
+			}
+			if(num[mid] > target) { // 这里也可以 else if
 				end = mid;
 			} else {
 				start = mid;

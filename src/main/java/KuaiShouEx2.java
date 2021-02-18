@@ -1,78 +1,84 @@
-import java.util.*;
+import com.sun.org.apache.bcel.internal.generic.F2I;
+import com.sun.xml.internal.ws.util.ReadAllStream;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class KuaiShouEx2 {
-    public static void main(String[] arrayList) {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("v_0");
-        list.add("v_1");
-        list.add("v_2");
-        list.add("p_3");
-        list.add("p_4");
-        list.add("p_5");
-        list.add("v_6");
-        list.add("p_7");
-        list.add("v_8");
-        list.add("v_9");
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("v0");
+        list.add("v1");
+        list.add("v2");
+        list.add("p3");
+        list.add("p4");
+        list.add("p5");
+        list.add("v6");
+        list.add("p7");
+        list.add("v8");
+        list.add("v9");
 
-        List recommendList = getRecommendList(list, 2);
-        recommendList.forEach(i -> System.out.println(i.toString()));
-
+        List<String> result = getRecommendedList(list, 4);
+        for (String s : result) {
+            System.out.println(s);
+        }
     }
 
-    private static List<String> getRecommendList(ArrayList<String> picAndPicList, int interval) {
-        if(picAndPicList.isEmpty() || interval == 0){
-            return Collections.emptyList();
+    private static List<String> getRecommendedList(List<String> picAndVideoList, int interval) {
+        if (picAndVideoList == null || picAndVideoList.size() == 0) {
+            return null;
         }
 
-        Boolean isFirstPic = false;
-        // 找到第一个图片
-        int currentIndex = 0;
-        List<String> result = new ArrayList<>();
-        while (!isFirstPic) {
-            if (isVideo(picAndPicList.get(currentIndex))) {
-                result.add(picAndPicList.get(currentIndex));
-                currentIndex++;
-            } else {
-                isFirstPic = true;
-            }
-        }
-
-        // 放入queue
+        boolean firstPic = false;
+        int index = 0;
         Queue<String> videoQueue = new LinkedList<>();
         Queue<String> picQueue = new LinkedList<>();
-        for (int i = currentIndex; i < picAndPicList.size(); i++) {
-            if (isVideo(picAndPicList.get(currentIndex))) {
-                videoQueue.add(picAndPicList.get(currentIndex));
+        List<String> result = new ArrayList<>();
+
+        while (!firstPic && index < picAndVideoList.size()) {
+            if (isVideo(picAndVideoList.get(index))) {
+                result.add(picAndVideoList.get(index));
+                index++;
             } else {
-                picQueue.add(picAndPicList.get(currentIndex));
+                firstPic = true;
             }
-            currentIndex++;
         }
 
-        // 从第一个图片往后有间隔的插
+        while (index < picAndVideoList.size()) {
+            if (isVideo(picAndVideoList.get(index))) {
+                videoQueue.add(picAndVideoList.get(index));
+            } else {
+                picQueue.add(picAndVideoList.get(index));
+            }
+            index++;
+        }
+
+        int currentSize = result.size();
         while (!videoQueue.isEmpty() && !picQueue.isEmpty()) {
-            if (currentIndex >= interval) {
+            if (currentSize >= interval) {
                 result.add(picQueue.poll());
-                currentIndex = 0;
+                currentSize = 0;
             } else {
                 result.add(videoQueue.poll());
-                currentIndex++;
+                currentSize++;
             }
         }
 
-        // 只有其中一方
         while (!videoQueue.isEmpty()) {
             result.add(videoQueue.poll());
         }
-        while (currentIndex >=interval && !picQueue.isEmpty()) {
+
+        while (!picQueue.isEmpty() && currentSize >= interval) {
             result.add(picQueue.poll());
         }
 
         return result;
     }
 
-    private static boolean isVideo(String value) {
-        if (value.contains("v")) {
+    private static boolean isVideo(String s) {
+        if (s.indexOf("v") != -1) {
             return true;
         } else {
             return false;
