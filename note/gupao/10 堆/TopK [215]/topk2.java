@@ -9,7 +9,7 @@ class Solution {
     
     public int partition(int[] nums, int start, int end, int k) {
         if (start >= end) {
-            // 这里说明已经排完了 left 到了 end||后  或 right到了 start||前 了，直接返回topk即可
+            // 这里说明已经排完了,即排好的顺序了已经是（ left 到了 end||后  或 right到了 start||前 了），直接返回topk即可
             return nums[k];
         }
 
@@ -31,14 +31,17 @@ class Solution {
                 right--;
             }
         }
+        // k 是 排好序后的 下标，k是永远不变的下标，为了定位到这个k
         if (k <= right) {
+            // 为什么 return ？因为这个递归方法是有返回值的。
             return partition(nums, start, right, k);
         }
+
         if (k >= left) {
             return partition(nums, left, end, k);
         }
 
-        // 排完了
+        // 递归 排完了
         return nums[k];
     }
 }
