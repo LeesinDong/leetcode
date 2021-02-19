@@ -3,13 +3,17 @@ class Solution {
         if(grid == null || grid.length == 0) {
             return 0;
         }
+
+        // 一行都没有或一行中一个都没有
         if (grid[0] == null || grid[0].length == 0) {
             return 0;
         }
+
         int row = grid.length;
         int column = grid[0].length;
         boolean[][] visited = new boolean[row][column];
         int number = 0;
+
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 // 同一个小岛内第一次bfs全为true，后面再!visited[i][j]都是false，所以不会进去
@@ -38,6 +42,7 @@ class Solution {
         yQueue.offer(j);
         // 为什么没有yQueue，因为这里存的是gird中的坐标，有x必有y
         while (!xQueue.isEmpty()) {
+            // 图，不是一对多直线延伸，是错乱的关系，不需要像树一样，一行一行的poll
             int currentX = xQueue.poll();
             int currentY = yQueue.poll();
             for (int k = 0; k < 4; k++) {

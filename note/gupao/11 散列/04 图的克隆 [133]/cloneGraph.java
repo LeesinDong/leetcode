@@ -1,26 +1,3 @@
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public List<Node> neighbors;
-    
-    public Node() {
-        val = 0;
-        neighbors = new ArrayList<Node>();
-    }
-    
-    public Node(int _val) {
-        val = _val;
-        neighbors = new ArrayList<Node>();
-    }
-    
-    public Node(int _val, ArrayList<Node> _neighbors) {
-        val = _val;
-        neighbors = _neighbors;
-    }
-}
-*/
-
 class Solution {
     public Node cloneGraph(Node node) {
         if (node == null) {
@@ -28,10 +5,12 @@ class Solution {
         }
         ArrayList<Node> nodes = getNodes(node);
         Map<Node, Node> mapping = new HashMap<>();
+
         // copy node
         for (Node n: nodes) {
             mapping.put(n, new Node(n.val));
         }
+
         //copy neighbors
         for (Node n: nodes) {
             Node newNode = mapping.get(n);
@@ -40,17 +19,18 @@ class Solution {
                 newNode.neighbors.add(newNeighbor);
             }
         }
+
         return mapping.get(node);
     }
     
     public ArrayList<Node> getNodes(Node node) {
         Queue<Node> queue = new LinkedList<Node>();
+        // 题目要求：每个节点值 Node.val 都是唯一的
         HashSet<Node> set = new HashSet<Node>();
-        // -> 1
         queue.offer(node);
-        // -> 1
         set.add(node);
         while (!queue.isEmpty()) {
+            // 这个是图，即不是一对多直线延伸的关系，不需要一行一行的poll，所以不需要在queue.size().for 里面poll
             //round 1: head = 1, queue is empty, set - > 1
             //round 2: head = 2, queue -> 4, set -> 1,2,4
             // round 3 head = 4 queue -> 3 , set -> 1,2,3,4

@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/02 2sum &amp; 3sum 题号在里面/3sum [15]/3sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/02 2sum &amp; 3sum 题号在里面/3sum [15]/3sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215]/topk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215]/topk2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/BasicBinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/BasicBinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/KuaiShouEx2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/KuaiShouEx2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/MaximumRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/MaximumRange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/SortList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KuaiShouEx2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KuaiShouEx2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WoodCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WoodCut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/WordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/a.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1ofuS3kRg41nS4hO0qwVmNcmxr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.WoodCut">
     <configuration name="BasicBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -85,6 +82,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.WoodCut" />
@@ -111,9 +121,16 @@
       <option name="presentableId" value="Default" />
       <updated>1613689965850</updated>
       <workItem from="1613689968307" duration="7209000" />
-      <workItem from="1613705277233" duration="2034000" />
+      <workItem from="1613705277233" duration="11608000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix">
+      <created>1613711487295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613711487295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
