@@ -13,6 +13,7 @@ class Solution {
                 // **************************nums[k] 不是k
                 if (nums[start] + nums[end] > nums[k]) {
                     // 最大的为k的时候，end - start 中间的都符合，start + (end - start) 中间的都是比k大的
+                    // *********************total += (end - start);
                     total += (end - start);
                     end --;
                 } else {

@@ -1,13 +1,15 @@
+import com.sun.prism.shader.Mask_TextureSuper_AlphaTest_Loader;
 
 public class WoodCut {
     public static void main(String[] args) {
-        int[] L = {232,124,456};
-        System.out.println(new WoodCut().woodCut(L, 7));
+        int[] L = {232, 124, 456};
+        System.out.println(new WoodCut().woodcut(L, 7));
     }
 
-    public int woodCut(int[] woods, int k) {
+
+    public int woodcut(int[] woods, int k) {
         if (woods == null || woods.length == 0) {
-            return -1;
+            return 0;
         }
 
         int start = 0;
@@ -21,33 +23,31 @@ public class WoodCut {
                 end = mid;
             }
         }
-
-        if (getPeices(woods, end) >= k) {
-            return end;
-        }
-
         if (getPeices(woods, start) >= k) {
             return start;
         }
-
+        if (getPeices(woods, end) >= k) {
+            return end;
+        }
         return -1;
     }
 
-    private int getPeices(int[] wood, int length) {
+    private int getPeices(int[] woods, int mid) {
         int result = 0;
-        for (int i : wood) {
-            result += i / length;
+        for (int i : woods) {
+            result += i / mid;
         }
         return result;
     }
 
     private int getMax(int[] woods) {
-        int max = 0;
-        for (int w : woods) {
-            if (w > max) {
-                max = w;
+        int max = woods[0];
+        for (int i : woods) {
+            if (i > max) {
+                max = i;
             }
         }
         return max;
+
     }
 }

@@ -1,5 +1,3 @@
-import java.util.zip.CheckedOutputStream;
-
 public class SortList {
     public static ListNode init() {
         ListNode node1 = new ListNode(1);
@@ -24,15 +22,71 @@ public class SortList {
 
     public static void main(String[] args) {
         ListNode head = init();
-        ListNode[] lists = getLists(head);
-        ListNode head1 = lists[0];
-        ListNode head2 = lists[1];
-        head2 = reverseList(head2);
-        ListNode result = mergeList(head1, head2);
-        while (result != null) {
-            System.out.println(result.val);
-            result = result.next;
+        ListNode[] list = getLists(head);
+
+        ListNode l1 = list[0];
+        ListNode l2 = list[1];
+        l2 = reverseList(l2);
+
+        // while (l1 != null) {
+        //     System.out.println(l1.val);
+        //     l1 = l1.next;
+        // }
+        // System.out.println("__________");
+        //
+        // while (l2 != null) {
+        //     System.out.println(l2.val);
+        //     l2 = l2.next;
+        // }
+        // System.out.println("__________");
+
+        ListNode ln = merge(l1, l2);
+        while (ln != null) {
+            System.out.println(ln.val);
+            ln = ln.next;
         }
+    }
+
+    private static ListNode merge(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null) {
+            return null;
+        }
+
+        if (l2 == null) {
+            return l1;
+        }
+
+        if (l1 ==null) {
+            return l2;
+        }
+
+        ListNode head = null;
+        if (l1.val < l2.val) {
+            head = l1;
+            head.next = merge(l1.next, l2);
+        } else {
+            head  = l2;
+            head.next = merge(l2.next, l1);
+        }
+        return head;
+    }
+
+    private static ListNode reverseList(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode pre = head;
+        ListNode current = head.next;
+        pre.next = null;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = pre;
+            pre = current;
+            current = next;
+        }
+        return pre;
+
     }
 
     private static ListNode[] getLists(ListNode head) {
@@ -66,52 +120,9 @@ public class SortList {
             count++;
             head = head.next;
         }
-
         curl1.next = null;
         curl2.next = null;
         return new ListNode[]{head1, head2};
     }
-
-    private static ListNode reverseList(ListNode head) {
-        if (head == null) {
-            return head;
-        }
-
-        ListNode pre = head;
-        ListNode current = pre.next;
-        pre.next = null;
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = pre;
-            pre = current;
-            current = next;
-        }
-        return pre;
-    }
-
-    private static ListNode mergeList(ListNode head1, ListNode head2) {
-        if (head1 == null && head2 == null) {
-            return null;
-        }
-
-        if (head1 == null) {
-            return head2;
-        }
-
-        if (head2 == null) {
-            return head1;
-        }
-
-        ListNode head = null;
-        if (head1.val < head2.val) {
-            head = head1;
-            head.next = mergeList(head1.next, head2);
-        } else {
-            head = head2;
-            head.next = mergeList(head2.next, head1);
-        }
-        return head;
-    }
-
 }
 

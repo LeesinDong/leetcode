@@ -1,5 +1,6 @@
 import com.sun.org.apache.bcel.internal.generic.F2I;
 import com.sun.xml.internal.ws.util.ReadAllStream;
+import javafx.scene.web.WebHistory;
 
 import java.util.*;
 
@@ -21,8 +22,8 @@ public class KuaiShouEx2 {
         result.forEach(System.out::println);
     }
 
-    private static List<String> getRecommendList(List<String> picAndVideoList, int interval) {
-        if (picAndVideoList == null || picAndVideoList.size() ==0) {
+    private static List<String> getRecommendList(List<String> picAndVideoList, int k) {
+        if (picAndVideoList == null || picAndVideoList.size() == 0) {
             return Collections.emptyList();
         }
 
@@ -43,16 +44,16 @@ public class KuaiShouEx2 {
 
         while (index < picAndVideoList.size()) {
             if (isVideo(picAndVideoList.get(index))) {
-                videoQueue.add(picAndVideoList.get(index));
+                videoQueue.offer(picAndVideoList.get(index));
             } else {
-                picQueue.add(picAndVideoList.get(index));
+                picQueue.offer(picAndVideoList.get(index));
             }
             index++;
         }
 
         int currentSize = result.size();
         while (!videoQueue.isEmpty() && !picQueue.isEmpty()) {
-            if (currentSize >= interval) {
+            if (currentSize >= k) {
                 result.add(picQueue.poll());
                 currentSize = 0;
             } else {
@@ -61,7 +62,15 @@ public class KuaiShouEx2 {
             }
         }
 
+        while (!videoQueue.isEmpty()) {
+            result.add(videoQueue.poll());
+        }
+
+        while (!picQueue.isEmpty() && currentSize >= k) {
+            result.add(picQueue.poll());
+        }
         return result;
+
     }
 
     private static boolean isVideo(String s) {
@@ -69,6 +78,8 @@ public class KuaiShouEx2 {
             return true;
         } else {
             return false;
+        }
+    }
 
-        }    }
+
 }

@@ -4,6 +4,7 @@ class Solution {
         if (nums == null || nums.length == 0) {
             return result;
         }
+        // *************************** 一定要sort
         //nlog(n)
         Arrays.sort(nums);
         int len = nums.length;
@@ -15,6 +16,7 @@ class Solution {
                 continue;
             }
 
+            // ***************** i + 1，i = 1的时候，left往后退了一个不能在0了
             int left = i + 1;
             int right = len - 1;
             // *******************别丢了
@@ -27,7 +29,7 @@ class Solution {
                     left++;
                     right--;
                     result.add(list);
-                    // **********************1.while 2. left< right 3. right + 1
+                    // **********************1.while 2. left< right 3. right + 1不是 right++
                     // 这两步去重用的
                     while (left < right && nums[left] == nums[left - 1]) {
                         left++;

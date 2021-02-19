@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/02 2sum &amp; 3sum 题号在里面/3sum [15]/3sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/02 2sum &amp; 3sum 题号在里面/3sum [15]/3sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215]/topk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215]/topk2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/BasicBinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/BasicBinarySearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/KuaiShouEx2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/KuaiShouEx2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/MaximumRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/MaximumRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/SortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/WoodCut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KuaiShouEx2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KuaiShouEx2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WoodCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WoodCut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +34,90 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1ofuS3kRg41nS4hO0qwVmNcmxr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.WoodCut">
+    <configuration name="BasicBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicBinarySearch" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KuaiShouEx2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KuaiShouEx2" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumRange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaximumRange" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortList" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WoodCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WoodCut" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WoodCut" />
+        <item itemvalue="Application.BasicBinarySearch" />
+        <item itemvalue="Application.KuaiShouEx2" />
+        <item itemvalue="Application.MaximumRange" />
+        <item itemvalue="Application.SortList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="fix">
+      <created>1613659420759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613659420759</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="" />
+      <created>1613689965850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613689965850</updated>
+      <workItem from="1613689968307" duration="7209000" />
+      <workItem from="1613705277233" duration="2034000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -39,5 +130,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
