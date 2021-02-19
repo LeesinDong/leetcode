@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/03 单词梯 [lintcode 120]/a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/04 n皇后 [力扣没有]/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/04 n皇后 [力扣没有]/NQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/14 字符串/01 逆转单词 151  557/reverseString1 [557].java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/14 字符串/01 逆转单词 151  557/reverseString1 [557].java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/14 字符串/01 逆转单词 151  557/reverseString2 [151].java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/14 字符串/01 逆转单词 151  557/reverseString2 [151].java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/14 字符串/02 整数转罗马数字 [12]/integertoroman.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/14 字符串/02 整数转罗马数字 [12]/integertoroman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NQueens.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.WoodCut">
+  <component name="RunManager" selected="Application.NQueens">
     <configuration name="BasicBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicBinarySearch" />
       <module name="leetcode" />
@@ -68,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SortList" />
+    <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NQueens" />
       <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.WoodCut" />
         <item itemvalue="Application.BasicBinarySearch" />
         <item itemvalue="Application.KuaiShouEx2" />
         <item itemvalue="Application.MaximumRange" />
-        <item itemvalue="Application.SortList" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613689965850</updated>
       <workItem from="1613689968307" duration="7209000" />
-      <workItem from="1613705277233" duration="11608000" />
+      <workItem from="1613705277233" duration="17883000" />
     </task>
     <task id="LOCAL-00002" summary="fix">
       <created>1613711487295</created>
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613711487295</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1613734018865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613734018865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
