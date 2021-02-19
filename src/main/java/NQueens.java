@@ -11,6 +11,7 @@ public class NQueens {
             }
             System.out.println();
         }
+
     }
 
     public static List<List<String>> resolveNQueens(int n) {
