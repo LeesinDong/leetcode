@@ -5,6 +5,8 @@ class Solution {
         // n = 3 -> 3(ways 111, 12, 21)
         // n = 4 -> 5(ways 1111,112,121,211,22)
         // n = 5 -> 8(ways 11111,1112,1121,1211,2111,221,212,122)
+
+        // 看这个就行了
         if (n <= 3) {
             return n;
         }
@@ -15,6 +17,8 @@ class Solution {
         for (int i = 2; i < n; i++) {
             steps[i % 3] = steps[(i - 1) % 3] + steps[(i - 2) % 3];
         }
+
+        // 因为从 0开始 所以n - 1，这里的n是几个台阶的意思，上面for循环最多也就到了n - 1
         return steps[(n - 1) % 3];
     }
 }
