@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="">
+    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note/gupao/16 并查集/02 小岛问题 [305] 自己写/NumberOfIsland2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/16 并查集/02 小岛问题 [305] 自己写/NumberOfIsland2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/17 动态规划/02 爬楼梯 [70]/climbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/17 动态规划/02 爬楼梯 [70]/climbingStairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +25,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="1oV9AVQIsVndt9SUB34H4E3zE6D" />
+  <component name="ProjectId" id="1ofuS3kRg41nS4hO0qwVmNcmxr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,21 +39,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/note/gupao/17 动态规划/06 回文分割[132字节跳动]" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\work_space\leetcode\note\gupao\17 动态规划\06 回文分割[132字节跳动]" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.WoodCut">
+  <component name="RunManager" selected="Application.NQueens">
     <configuration name="BasicBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicBinarySearch" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KuaiShouEx2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KuaiShouEx2" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumRange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaximumRange" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NQueens" />
       <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -65,93 +77,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.WoodCut" />
         <item itemvalue="Application.BasicBinarySearch" />
+        <item itemvalue="Application.KuaiShouEx2" />
+        <item itemvalue="Application.MaximumRange" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="" />
-      <created>1613360753238</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1613360753238</updated>
-      <workItem from="1613360755377" duration="41000" />
-      <workItem from="1613360824121" duration="58000" />
-      <workItem from="1613360915267" duration="4982000" />
-      <workItem from="1613369125397" duration="349000" />
-      <workItem from="1613369601696" duration="718000" />
-      <workItem from="1613370349521" duration="6901000" />
-      <workItem from="1613623371800" duration="1373000" />
-      <workItem from="1613624779203" duration="24019000" />
-    </task>
     <task id="LOCAL-00001" summary="fix">
-      <created>1613383953365</created>
+      <created>1613659420759</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1613383953365</updated>
+      <updated>1613659420759</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="" />
+      <created>1613689965850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613689965850</updated>
+      <workItem from="1613689968307" duration="7209000" />
+      <workItem from="1613705277233" duration="18169000" />
+      <workItem from="1613823725312" duration="191000" />
+      <workItem from="1613879012145" duration="4857000" />
+      <workItem from="1613894918183" duration="4158000" />
     </task>
     <task id="LOCAL-00002" summary="fix">
-      <created>1613649098738</created>
+      <created>1613711487295</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1613649098738</updated>
+      <updated>1613711487295</updated>
     </task>
     <task id="LOCAL-00003" summary="fix">
-      <created>1613649122303</created>
+      <created>1613734018865</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1613649122303</updated>
+      <updated>1613734018865</updated>
     </task>
     <task id="LOCAL-00004" summary="fix">
-      <created>1613650059307</created>
+      <created>1613749272722</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1613650059307</updated>
+      <updated>1613749272722</updated>
     </task>
     <task id="LOCAL-00005" summary="fix">
-      <created>1613653009186</created>
+      <created>1613749318535</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1613653009187</updated>
+      <updated>1613749318535</updated>
     </task>
     <task id="LOCAL-00006" summary="fix">
-      <created>1613653805104</created>
+      <created>1613906663732</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1613653805104</updated>
+      <updated>1613906663732</updated>
     </task>
-    <task id="LOCAL-00007" summary="fix">
-      <created>1613888008995</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1613888008995</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

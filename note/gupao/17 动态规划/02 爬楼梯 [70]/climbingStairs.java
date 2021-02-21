@@ -7,7 +7,8 @@ class Solution {
         // n = 5 -> 8(ways 11111,1112,1121,1211,2111,221,212,122)
         if (n <= 3) {
             return n;
-        } 
+        }
+
         int[] steps = new int[3];
         steps[0] = 1;
         steps[1] = 2;
