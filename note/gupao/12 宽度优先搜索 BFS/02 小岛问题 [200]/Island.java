@@ -34,7 +34,8 @@ class Solution {
     public void bfs(char[][] grid, int i, int j, boolean[][] visited) {
         int[] kx ={1, -1, 0, 0};
         int[] ky ={0, 0, 1, -1};
-        visited[i][j] = true;
+        // 这句话可有可无
+        // visited[i][j] = true;
         // 这里两个queue其实只是保存坐标 一个点 上下左右宽度搜索
         Queue<Integer> xQueue = new LinkedList<>();
         Queue<Integer> yQueue = new LinkedList<>();
@@ -48,6 +49,7 @@ class Solution {
             for (int k = 0; k < 4; k++) {
                 int newX = currentX + kx[k];
                 int newY = currentY + ky[k];
+                // ****************************************** >=0
                 if (newX >= 0 && newY >= 0 && newX < grid.length && newY < grid[0].length && !visited[newX][newY]) {
                     if (grid[newX][newY] == '1') {
                         xQueue.offer(newX);

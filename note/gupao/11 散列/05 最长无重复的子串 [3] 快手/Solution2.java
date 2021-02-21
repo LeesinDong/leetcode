@@ -12,14 +12,14 @@ public class Solution {
        }
 
        int i = 0;
-       int j = 0;
+       int right = 0;
        int ans = 0;
        int[] map = new int[256];
        for (i = 0; i < s.length(); i++) {
-            while (j < s.length() && map[s.charAt(j)] == 0) {
-                map[s.charAt(j)] = 1;
-                ans = Math.max(ans, j - i + 1);
-                j++;
+            while (right < s.length() && map[s.charAt(right)] == 0) {
+                map[s.charAt(right)] = 1;
+                ans = Math.max(ans, right - i + 1);
+                right++;
             }
             map[s.charAt(i)] = 0;
        } 

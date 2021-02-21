@@ -4,6 +4,7 @@ public class WoodCut {
     public static void main(String[] args) {
         int[] L = {232, 124, 456};
         System.out.println(new WoodCut().woodcut(L, 7));
+        System.out.println("abc".charAt(0));
     }
 
 

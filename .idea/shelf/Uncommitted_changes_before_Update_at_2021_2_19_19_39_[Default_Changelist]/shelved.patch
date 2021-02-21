@@ -1,0 +1,192 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d77af2a-f1b8-4705-8110-0f11eb9f544b\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/leetcode.iml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ca2b0729326dd7c060cb2be9f3ab1ba722d2b85e)
++++ b/.idea/workspace.xml	(date 1613734712256)
+@@ -4,14 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/leetcode.iml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" afterDir="false" />
++    <list default="true" id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_2_18__10_37___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_2_18__10_37___Default_Changelist_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -21,13 +17,131 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitSEFilterConfiguration">
++    <file-type-list>
++      <filtered-out-file-type name="LOCAL_BRANCH" />
++      <filtered-out-file-type name="REMOTE_BRANCH" />
++      <filtered-out-file-type name="TAG" />
++      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
++    </file-type-list>
++  </component>
++  <component name="ProjectId" id="1oV9AVQIsVndt9SUB34H4E3zE6D" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <OptionsSetting value="false" id="Update" />
+-    <ConfirmationsSetting value="2" id="Add" />
++  </component>
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="aspect.path.notification.shown" value="true" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/note/gupao/17 动态规划/06 回文分割[132字节跳动]" />
++    <property name="nodejs_package_manager_path" value="npm" />
++    <property name="project.structure.last.edited" value="Project" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
++    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
++  </component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="G:\work_space\leetcode\note\gupao\17 动态规划\06 回文分割[132字节跳动]" />
++    </key>
+   </component>
++  <component name="RunManager">
++    <configuration name="WoodCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="WoodCut" />
++      <module name="leetcode" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
++      <option name="arquillianRunConfiguration">
++        <value>
++          <option name="containerStateName" value="" />
++        </value>
++      </option>
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.WoodCut" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="" />
++      <created>1613360753238</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1613360753238</updated>
++      <workItem from="1613360755377" duration="41000" />
++      <workItem from="1613360824121" duration="58000" />
++      <workItem from="1613360915267" duration="4982000" />
++      <workItem from="1613369125397" duration="349000" />
++      <workItem from="1613369601696" duration="718000" />
++      <workItem from="1613370349521" duration="6901000" />
++      <workItem from="1613623371800" duration="1373000" />
++      <workItem from="1613624779203" duration="11101000" />
++    </task>
++    <task id="LOCAL-00001" summary="fix">
++      <created>1613383953365</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1613383953365</updated>
++    </task>
++    <task id="LOCAL-00002" summary="fix">
++      <created>1613649098738</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1613649098738</updated>
++    </task>
++    <task id="LOCAL-00003" summary="fix">
++      <created>1613649122303</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1613649122303</updated>
++    </task>
++    <task id="LOCAL-00004" summary="fix">
++      <created>1613650059307</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1613650059307</updated>
++    </task>
++    <task id="LOCAL-00005" summary="fix">
++      <created>1613653009186</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1613653009187</updated>
++    </task>
++    <task id="LOCAL-00006" summary="fix">
++      <created>1613653805104</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1613653805104</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+       <map>
+@@ -40,4 +154,10 @@
+     </option>
+     <option name="oldMeFiltersMigrated" value="true" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
++    <option name="CHECK_NEW_TODO" value="false" />
++    <MESSAGE value="fix" />
++    <option name="LAST_COMMIT_MESSAGE" value="fix" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Solution {\r\n    // 前缀和\r\n    public int subarraySum(int[] nums, int k) {\r\n        if (nums == null || nums.length == 0) {\r\n            return 0;\r\n        }\r\n        Map<Integer, Integer> map = new HashMap<>();\r\n        for (int i = 1; i < nums.length; i++) {\r\n            nums[i] += nums[i - 1];\r\n        }\r\n        int ans = 0;\r\n        int temp = 0;\r\n        // 为什么0 ？ 例子  [1, 2, 3]  k = 1, nums[0] - 1 = 0 需要有一个0被contains到\r\n        map.put(0, 1);\r\n        for (int i = 0; i < nums.length; i++) {\r\n            if (map.containsKey(nums[i] - k)) {\r\n                ans += map.get(nums[i] - k);\r\n            }\r\n            // 例子[1, 2, 2, 3]  没有增长的情况\r\n            temp = map.containsKey(nums[i]) ? map.get(nums[i]) + 1 : 1;\r\n            map.put(nums[i], temp);\r\n        }\r\n        return ans;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java b/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java
+--- a/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java	(revision ca2b0729326dd7c060cb2be9f3ab1ba722d2b85e)
++++ b/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java	(date 1613714180882)
+@@ -8,6 +8,7 @@
+         for (int i = 1; i < nums.length; i++) {
+             nums[i] += nums[i - 1];
+         }
++
+         int ans = 0;
+         int temp = 0;
+         // 为什么0 ？ 例子  [1, 2, 3]  k = 1, nums[0] - 1 = 0 需要有一个0被contains到

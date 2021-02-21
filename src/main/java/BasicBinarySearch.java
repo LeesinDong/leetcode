@@ -1,7 +1,4 @@
-import com.sun.tools.javac.code.TargetType;
-import sun.nio.cs.ext.DoubleByte;
 
-import java.beans.IndexedPropertyDescriptor;
 
 public class BasicBinarySearch {
     public static void main(String[] args) {

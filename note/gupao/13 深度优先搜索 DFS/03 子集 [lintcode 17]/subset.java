@@ -17,7 +17,6 @@ public class Solution {
     }
     
     public void dfs(int[] nums, List<List<Integer>> result, List<Integer> list, int pos) {
-        
         /*
             []
             1
@@ -28,7 +27,6 @@ public class Solution {
                 2, 3
             3
         */
-            
         result.add(new ArrayList<Integer>(list));
         for (int i = pos; i < nums.length; i++) {
             list.add(nums[i]);
