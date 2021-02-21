@@ -7,10 +7,12 @@ import java.util.HashMap;
 class Point {
 	int x;
 	int y;
+
 	Point() {
 		x = 0;
 		y = 0;
 	}
+
 	Point(int a, int b) {
 		x = a;
 		y = b;
@@ -35,6 +37,7 @@ public class NumberOfIsland2 {
 			System.out.println(number);
 		}
 	}
+
 	class UnionFind {
 		private Map<Integer, Integer> father = new HashMap<>();
 		public UnionFind(int row, int column) {
@@ -48,14 +51,18 @@ public class NumberOfIsland2 {
 		
 		public int find(int x) {
 			int parent = father.get(x);
+			// 有父亲的意思
 			while (parent != father.get(parent)) {
 				parent = father.get(parent);
 			}
+
+			// 有父亲，就缓存一下，下次能直接找到
 			int temp = -1;
 			int fa = father.get(x);
 			while (fa != father.get(fa)) {
 				temp = father.get(fa);
 				father.put(fa,  parent);
+
 				fa = temp;
 			}
 			return parent;
@@ -74,16 +81,21 @@ public class NumberOfIsland2 {
 			return x * column + y;
 		}
 	}
+
+	// 本质：本身是一个小岛，但是并查集里面没有，就往并查集里面放
 	public List<Integer> numIslands(int n, int m, Point[] operators) {
 		List<Integer> result = new ArrayList<>();
 		if (operators == null || operators.length == 0) {
 			return result;
 		}
+
 		UnionFind unionFind = new UnionFind(n, m);
 		boolean[][] island = new boolean[n][m];
 		int[] dx = {0, 0, 1, -1};
 		int[] dy = {1, -1, 0, 0};
 		int count = 0;
+
+		// 这里就四个点而已，不用queue
 		for (Point point: operators) {
 			int x = point.x;
 			int y = point.y;
@@ -91,12 +103,13 @@ public class NumberOfIsland2 {
 				island[x][y] = true;
 				count++;
 				// int id = unionFind.convertedId(x, y, m);
-				int id = unionFind.convertedId(x, y, n);
+				int id = unionFind.convertedId(x, y, n);// m 一行几个
 				for (int i = 0; i < 4; i++) {
 					int current_x = x + dx[i];
 					int current_y = y + dy[i];
 					// island[current_x][current_y] 上下左右，true则和自己有连接，是一个小岛，之前认亲过了。
-					if (current_x >= 0 && current_x < n && current_y >= 0 && current_y < m && island[current_x][current_y]) {
+					if (current_x >= 0 && current_x < n && current_y >= 0 && current_y < m
+							&& island[current_x][current_y]) {// 本身是一个小岛的意思
 						// int nid = unionFind.convertedId(current_x, current_y, m);
 						int nid = unionFind.convertedId(current_x, current_y, n);
 						int father = unionFind.find(id);

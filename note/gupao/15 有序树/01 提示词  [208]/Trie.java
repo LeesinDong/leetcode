@@ -1,4 +1,4 @@
-// 本质：移动current、children
+// 本质：移动current、children + 一开始map.put
 class TrieNode {
     // 三样东西：1 当前node的字符串 2 children 3 是否找到了word
     //a - z
@@ -35,6 +35,7 @@ public class Trie {
             // 1 移动current、children
             if (!children.containsKey(wc)) {
                 TrieNode newNode = new TrieNode(wc);
+                // 别忘了这步
                 children.put(wc, newNode);
                 current = newNode;
             } else {
@@ -47,6 +48,8 @@ public class Trie {
             if (i == wordArray.length - 1) {
                 current.hasWord = true;
             }
+            // ***********************没有到最后一个，也不要设置为false，因为可能到了中间某个，单词，
+            // 但是这个false是啥意思?记住不能设置false，只能方法返回false，没有找到而已
         }
     }
     
