@@ -3,11 +3,15 @@ class Solution {
         if (A == null || A.length() == 0 || B == null || B.length() == 0) {
             return 0;
         }
+
         int aLength = A.length();
         int bLength = B.length();
         int[][] longest = new int[aLength + 1][bLength + 1];
+
         for (int i = 1; i <= A.length(); i++) {
             for (int j = 1; j <= B.length; j++) {
+                // 这个记住结论即可，不好推导
+                // i - 1 因为longest 比 string里面 + 1了
                 if (A.charAt(i- 1) == B.charAt(j - 1)) {
                     longest[i][j] = longest[i - 1][j - 1] + 1;
                 } else {
@@ -15,6 +19,7 @@ class Solution {
                 }
             }
         }
+
         return longest[aLength][bLength];
     }
 }
