@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f59666-1e73-4f5f-a988-1547f4e0f833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/16 并查集/02 小岛问题 [305] 自己写/NumberOfIsland2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/16 并查集/02 小岛问题 [305] 自己写/NumberOfIsland2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <workItem from="1613369601696" duration="718000" />
       <workItem from="1613370349521" duration="6901000" />
       <workItem from="1613623371800" duration="1373000" />
-      <workItem from="1613624779203" duration="24019000" />
+      <workItem from="1613624779203" duration="25046000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1613383953365</created>
@@ -151,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613888008995</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix">
+      <created>1613913255001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613913255001</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
