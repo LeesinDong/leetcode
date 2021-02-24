@@ -13,6 +13,7 @@ class UnionFind {
     public int find(int x) {
         int parent = father.get(x);
         // 有父亲的意思，就是不是一个点的意思，因为构造函数默认，就是key value是一个点
+        // ***************************get(parent)
         while (parent != father.get(parent)) {
             parent = father.get(parent);
         }
@@ -64,7 +65,6 @@ class Solution {
             int y = xy[1];
             // 如果是true，就是之前已经处理过了，处理过的，就不对count进行修改了，因为isLand里面这段里面的本质就是修改count
             if (!isLand[x][y]) {
-                System.out.print(1);
                 isLand[x][y] = true;
                 int id = unionFind.convertId(x, y, n);
                 count++;

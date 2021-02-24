@@ -12,6 +12,7 @@ class Solution {
             for (int j = 1; j <= B.length; j++) {
                 // 这个记住结论即可，不好推导
                 // i - 1 因为longest 比 string里面 + 1了
+                // ***********************************A.charAt(i- 1) == B.charAt(j - 1)
                 if (A.charAt(i- 1) == B.charAt(j - 1)) {
                     longest[i][j] = longest[i - 1][j - 1] + 1;
                 } else {

@@ -12,6 +12,7 @@ class Solution {
         }
 
         int[] steps = new int[3];
+        // **************************初始化
         steps[0] = 1;
         steps[1] = 2;
         for (int i = 2; i < n; i++) {
