@@ -1,5 +1,6 @@
 
 
+
 public class BasicBinarySearch {
     public static void main(String[] args) {
         int[] num = {1,4,7,9,10,14,16,20,56,89};
