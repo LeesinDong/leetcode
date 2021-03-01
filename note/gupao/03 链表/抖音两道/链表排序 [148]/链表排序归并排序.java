@@ -24,6 +24,7 @@ public class 链表排序归并排序 {
         ListNode fast = head;
         ListNode slow = head;
         // fast.next.next != null 不是用来判空的，用来fast到了最后一个slow就是中间点，所以是跳出循环的条件
+        // 所有的快慢指针都是这个条件，fast一次跳两个，如果一个、两个都没有，那肯定不满足下次跳了
         while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;

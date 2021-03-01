@@ -18,7 +18,8 @@ class Solution {
         // i = 0 1 皆可，最好1，因为从j开始  i - 1，如果是0 结果 -1， j 到 -1 有什么意义？
         // for (int i = 1; i <= s.length(); i++) {
         // 1 到length()，因为minCut就这样
-        for (int i = 1; i <= s.length(); i++) {
+        // for (int i = 1; i <= s.length(); i++) {
+        for (int i = 0; i <= s.length(); i++) {
             // j < i 不是 <= 因为i可以到s.length() 但是pali[j] 是不可以的。会数组越界
             for (int j = 0; j < i; j++) {
                 // 如果 j到i -1 是回文，i是主调，还是从i开始往前推的，往前是根据j

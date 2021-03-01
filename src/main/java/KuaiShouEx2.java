@@ -1,38 +1,43 @@
-import com.sun.org.apache.bcel.internal.generic.F2I;
-import com.sun.xml.internal.ws.util.ReadAllStream;
-import javafx.scene.web.WebHistory;
 
 import java.util.*;
 
 public class KuaiShouEx2 {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("v0");
-        list.add("v1");
-        list.add("v2");
-        list.add("p3");
-        list.add("p4");
-        list.add("p5");
-        list.add("v6");
-        list.add("p7");
-        list.add("v8");
-        list.add("v9");
+        List<String> picAndVideoList = new ArrayList<>();
+        picAndVideoList.add("v_0");
+        picAndVideoList.add("v_1");
+        picAndVideoList.add("v_2");
+        picAndVideoList.add("p_3");
+        picAndVideoList.add("p_4");
+        picAndVideoList.add("p_5");
+        picAndVideoList.add("v_6");
+        picAndVideoList.add("p_7");
+        picAndVideoList.add("v_8");
+        picAndVideoList.add("v_9");
+        // v_0
+        // v_1
+        // v_2
+        // v_6
+        // p_3
+        // v_8
+        // v_9
 
-        List<String> result = getRecommendList(list, 4);
-        result.forEach(System.out::println);
+        List<String> result = new KuaiShouEx2().getRecommendedList(picAndVideoList, 2);
+        for (String string : result) {
+            System.out.println(string);
+        }
     }
 
-    private static List<String> getRecommendList(List<String> picAndVideoList, int k) {
+    private List<String> getRecommendedList(List<String> picAndVideoList, int i) {
         if (picAndVideoList == null || picAndVideoList.size() == 0) {
             return Collections.emptyList();
         }
 
+        List<String> result = new ArrayList<>();
         Queue<String> videoQueue = new LinkedList<>();
         Queue<String> picQueue = new LinkedList<>();
-        boolean firstPic = false;
         int index = 0;
-        List<String> result = new ArrayList<>();
-
+        boolean firstPic = false;
         while (!firstPic && index < picAndVideoList.size()) {
             if (isVideo(picAndVideoList.get(index))) {
                 result.add(picAndVideoList.get(index));
@@ -52,8 +57,8 @@ public class KuaiShouEx2 {
         }
 
         int currentSize = result.size();
-        while (!videoQueue.isEmpty() && !picQueue.isEmpty()) {
-            if (currentSize >= k) {
+        while (!picQueue.isEmpty() && !videoQueue.isEmpty()) {
+            if (currentSize >= i) {
                 result.add(picQueue.poll());
                 currentSize = 0;
             } else {
@@ -66,20 +71,18 @@ public class KuaiShouEx2 {
             result.add(videoQueue.poll());
         }
 
-        while (!picQueue.isEmpty() && currentSize >= k) {
+        if (!picQueue.isEmpty() && currentSize >= i) {
             result.add(picQueue.poll());
         }
-        return result;
 
+        return result;
     }
 
-    private static boolean isVideo(String s) {
-        if (s.indexOf('v') != -1) {
+    private boolean isVideo(String s) {
+        if (s.indexOf("v") != -1) {
             return true;
         } else {
             return false;
         }
     }
-
-
 }

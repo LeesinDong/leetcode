@@ -7,7 +7,7 @@ class LRUCache {
         public CacheNode(int key, int value) {
             this.key = key;
             this.value = value;
-            // *************
+            // ************* 这个不写也行
             this.prev = null;
             this.next = null;
         }

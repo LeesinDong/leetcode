@@ -27,12 +27,13 @@ public class SortList {
         // 第几位
         int count = 1;
         while (head != null) {
-            // 奇数位
+            // ********************************* 1的时候是：奇数位
             if (count % 2 == 1) {
                 if (curl1 == null) { // 最开始情况
                     curl1 = head;
                     head1 = curl1;
                 } else {
+                    // *************************** curl1.next 而不是head1.next
                     curl1.next = head; //
                     curl1 = curl1.next; // 遍历
                 }
@@ -115,7 +116,7 @@ public class SortList {
         ListNode head1 = lists[0];
         ListNode head2 = lists[1];
 
-        //偶数链表反转
+        //***********************************************偶数链表反转
         head2 = reverseList(head2);
 
         //两个链表合并

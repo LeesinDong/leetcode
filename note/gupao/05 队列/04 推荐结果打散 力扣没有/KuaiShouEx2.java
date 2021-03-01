@@ -17,12 +17,23 @@ public class KuaiShouEx2 {
 		picAndVideoList.add("p_7");
 		picAndVideoList.add("v_8");
 		picAndVideoList.add("v_9");
+		// k = 4
 		// v_0
 		// v_1
 		// v_2
 		// v_6
 		// p_3
 		// v_8
+		// v_9
+
+		// k = 2
+		// v_0
+		// v_1
+		// v_2
+		// p_3
+		// v_6
+		// v_8
+		// p_4
 		// v_9
 		List<String> result = new KuaiShouEx2().getRecommendedList(picAndVideoList, 4);
 		for (int i = 0; i < result.size(); i++) {
@@ -74,11 +85,12 @@ public class KuaiShouEx2 {
 			}
 		}
 
-		// 3 最后
+		// 3 最后 （下面的while 和 if 不可能同时出现）
 		// 只有视频了，直接插
 		while(!videoQueue.isEmpty()) {
 			result.add(videoQueue.poll());
 		}
+
 		// 只有图片了，并且到达该插图片的临界点，插图片
 		if(currentSize >= maxInterval && !picQueue.isEmpty()) {
 			result.add(picQueue.poll());

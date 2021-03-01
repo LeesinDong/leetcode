@@ -25,8 +25,7 @@ public class BasicBinarySearch {
 			mid = start + (end - start) / 2;
 			if (num[mid] == target) {
 				return mid;
-			}
-			if(num[mid] > target) { // 这里也可以 else if
+			} else if(num[mid] > target) { // 这里也可以 else if
 				end = mid;
 			} else {
 				start = mid;

@@ -28,6 +28,7 @@ public class ByteDanceEx1 {
 			while (!stack.isEmpty() && numbers[i] < numbers[stack.peek()]) {
 				// stack里面存的是下标
 				int index = stack.pop();
+				// ***************left right是i
 				int left = i;
 				int right = i;
 				if (stack.isEmpty()) {

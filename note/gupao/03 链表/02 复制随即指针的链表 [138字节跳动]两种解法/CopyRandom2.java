@@ -23,6 +23,7 @@ class Solution {
     
     public void copyRandom(Node head) {
         Node node = head;
+        // ******************* 注意条件是node != null ， node.next != null 不可以放到if里面
         while(node != null && node.next != null) {
             if (node.random != null) {
                 node.next.random = node.random.next;

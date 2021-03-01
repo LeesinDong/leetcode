@@ -5,11 +5,13 @@ public class WoodCut {
 		int[] L = {232,124,456};
 		System.out.println(new WoodCut().woodCut(L, 7));
 	}
+	// 返回切出来的长度
 	public int woodCut(int[] L, int k) {
 		if (L == null || L.length == 0) {
 			return 0;
 		}
 		int start = 1;
+		// 切出来的长度，不能比最大的木头大了
 		int end = getMax(L);
 		int mid;
 		while (start + 1 < end) {
