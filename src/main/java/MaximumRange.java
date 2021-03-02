@@ -5,23 +5,23 @@ import java.util.Stack;
 public class MaximumRange {
 	public static void main(String[] args) {
 		int[] nums = {5, 2, 3 , 4, 1};
-		System.out.println(new MaximumRange().getMax(nums));
+		System.out.println(getMax(nums));
 	}
 
-	public int getMax(int[] nums) {
+	private static int getMax(int[] nums) {
 		if (nums == null || nums.length == 0) {
 			return 0;
 		}
 
 		Stack<Integer> stack = new Stack<>();
 		int[] sum = new int[nums.length + 1];
-		for (int i = 1 ; i < sum.length; i++) {
+		for (int i = 1; i < sum.length; i++) {
 			sum[i] = sum[i - 1] + nums[i - 1];
 		}
 		int max = 0;
 
 		for (int i = 0; i < nums.length; i++) {
-			while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
+			while (!stack.isEmpty() && nums[stack.peek()] > nums[i]) {
 				int index = stack.pop();
 				int left = i;
 				int right = i;
@@ -48,6 +48,7 @@ public class MaximumRange {
 		}
 
 		return max;
-
 	}
+
+
 }

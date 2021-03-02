@@ -1,4 +1,5 @@
 
+import java.time.chrono.IsoEra;
 import java.util.*;
 
 public class KuaiShouEx2 {
@@ -22,22 +23,23 @@ public class KuaiShouEx2 {
         // v_8
         // v_9
 
-        List<String> result = new KuaiShouEx2().getRecommendedList(picAndVideoList, 2);
-        for (String string : result) {
+        List<String> list = getRecommendedList(picAndVideoList, 2);
+        for (String string : list) {
             System.out.println(string);
         }
     }
 
-    private List<String> getRecommendedList(List<String> picAndVideoList, int i) {
+    private static List<String> getRecommendedList(List<String> picAndVideoList, int i) {
         if (picAndVideoList == null || picAndVideoList.size() == 0) {
             return Collections.emptyList();
         }
 
         List<String> result = new ArrayList<>();
-        Queue<String> videoQueue = new LinkedList<>();
         Queue<String> picQueue = new LinkedList<>();
-        int index = 0;
+        Queue<String> videoQueue = new LinkedList<>();
         boolean firstPic = false;
+        int index = 0;
+
         while (!firstPic && index < picAndVideoList.size()) {
             if (isVideo(picAndVideoList.get(index))) {
                 result.add(picAndVideoList.get(index));
@@ -56,14 +58,14 @@ public class KuaiShouEx2 {
             index++;
         }
 
-        int currentSize = result.size();
+        int currentIndex = result.size();
         while (!picQueue.isEmpty() && !videoQueue.isEmpty()) {
-            if (currentSize >= i) {
+            if (currentIndex > i) {
                 result.add(picQueue.poll());
-                currentSize = 0;
+                currentIndex = 0;
             } else {
                 result.add(videoQueue.poll());
-                currentSize++;
+                currentIndex++;
             }
         }
 
@@ -71,15 +73,15 @@ public class KuaiShouEx2 {
             result.add(videoQueue.poll());
         }
 
-        if (!picQueue.isEmpty() && currentSize >= i) {
+        if (!picQueue.isEmpty() && currentIndex > i) {
             result.add(picQueue.poll());
         }
 
         return result;
     }
 
-    private boolean isVideo(String s) {
-        if (s.indexOf("v") != -1) {
+    private static boolean isVideo(String s) {
+        if (s.indexOf('v') != -1) {
             return true;
         } else {
             return false;

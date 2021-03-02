@@ -16,7 +16,7 @@ class Solution {
             if (nums[mid] > nums[start]) {
                 // *******************target 不是nums[target]
                 // *******************每次都是两端和target比较
-                // *******************必须是>=
+                // ******************* 必须是>= 一般条件里面都是加上=的，因为尽量把所有的都囊括进来，避免少了一些可能
                 if (target <= nums[mid] && nums[start] <= target) {
                     end = mid;
                 } else {

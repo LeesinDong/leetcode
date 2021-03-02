@@ -27,17 +27,56 @@ public class SortList {
         ListNode[] lists = getLists(head);
         ListNode head1 = lists[0];
         ListNode head2 = lists[1];
-        head2 = reverse(head2);
+        head2 = reverseList(head2);
         ListNode newHead = mergeList(head1, head2);
-
         while (newHead != null) {
             System.out.println(newHead.val);
             newHead = newHead.next;
-
         }
     }
 
-    public static ListNode[] getLists(ListNode head) {
+    private static ListNode mergeList(ListNode head1, ListNode head2) {
+        if (head1 == null && head2 == null) {
+            return null;
+        }
+
+        if (head1 == null) {
+            return head2;
+        }
+
+        if (head2 == null) {
+            return head1;
+        }
+
+        ListNode head = null;
+        if (head1.val < head2.val) {
+            head = head1;
+            head.next = mergeList(head1.next, head2);
+        } else {
+            head = head2;
+            head.next = mergeList(head2.next, head1);
+        }
+        return head;
+    }
+
+    private static ListNode reverseList(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode pre = head;
+        ListNode current = head.next;
+        pre.next= null;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = pre;
+            pre = current;
+            current = next;
+        }
+        return pre;
+    }
+
+    private static ListNode[] getLists(ListNode head) {
         if (head == null) {
             return null;
         }
@@ -68,51 +107,10 @@ public class SortList {
             count++;
             head = head.next;
         }
-        curl1.next =null;
+
+        curl1.next = null;
         curl2.next = null;
-
         return new ListNode[]{head1, head2};
-    }
-
-    public static ListNode reverse(ListNode head) {
-        if (head == null) {
-            return null;
-        }
-
-        ListNode pre = head;
-        ListNode current = head.next;
-        pre.next = null;
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = pre;
-            pre = current;
-            current = next;
-        }
-        return pre;
-    }
-
-    public static ListNode mergeList(ListNode head1, ListNode head2) {
-        if (head1 == null && head2 == null) {
-            return null;
-        }
-
-        if (head1 == null) {
-            return head2;
-        }
-
-        if (head2 == null) {
-            return head1;
-        }
-
-        ListNode head = null;
-        if (head1.val < head2.val) {
-            head = head1;
-            head.next = mergeList(head1.next, head2);
-        } else {
-            head = head2;
-            head.next = mergeList(head2.next, head1);
-        }
-        return head;
     }
 }
 

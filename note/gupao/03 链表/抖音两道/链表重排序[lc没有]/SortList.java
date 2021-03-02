@@ -24,7 +24,7 @@ public class SortList {
         ListNode curl1 = null;
         ListNode curl2 = null;
 
-        // 第几位
+        // ************************ 这里必须是1，第几位 而不是0，否则下面的 1/1 == 0 已经到了第二个数，即偶数位，但是会到奇数位的链表里。
         int count = 1;
         while (head != null) {
             // ********************************* 1的时候是：奇数位
