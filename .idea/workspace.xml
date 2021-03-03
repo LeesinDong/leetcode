@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/03 验证三角形 [611]/ValidTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序 [912]/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/09 树/04 二叉树的序列化和反序列化 [297] 字节跳动/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/09 树/04 二叉树的序列化和反序列化 [297] 字节跳动/Codec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/09 树/06 遍历/07 中序遍历 [94]/❤ Inorder2 .java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/09 树/06 遍历/07 中序遍历 [94]/❤ Inorder2 .java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/09 树/06 遍历/09 层次遍历 [102这个] [107]/❤ 二叉树的层次遍历【力扣】 [102].java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/09 树/06 遍历/09 层次遍历 [102这个] [107]/❤ 二叉树的层次遍历【力扣】 [102].java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/09 树/13 平衡二叉树 [110]/balancedTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/09 树/13 平衡二叉树 [110]/balancedTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/TopK [215] 两种解法/topk2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/10 堆/从数据流中找中位数 lintcode 81 字节跳动/MedianInDataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/03 子数组和等于k [560]/SubarrayEqualsk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/04 图的克隆 [133]/cloneGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/11 散列/05 最长无重复的子串 [3] 快手/Solution1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/12 宽度优先搜索 BFS/02 小岛问题 [200]/Island.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/03 子集 [lintcode 17]/subset.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/03 子集 [lintcode 17]/subset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/04 n皇后 [力扣没有]/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/13 深度优先搜索 DFS/04 n皇后 [力扣没有]/NQueens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NQueens.java" afterDir="false" />
+    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/nQueens.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/nQueens.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +131,7 @@
       <workItem from="1614562052919" duration="18694000" />
       <workItem from="1614650032582" duration="8975000" />
       <workItem from="1614732800232" duration="14417000" />
-      <workItem from="1614779694842" duration="2236000" />
+      <workItem from="1614779694842" duration="2517000" />
     </task>
     <task id="LOCAL-00002" summary="fix">
       <created>1613711487295</created>
@@ -222,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614700813277</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix">
+      <created>1614787950697</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614787950697</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
