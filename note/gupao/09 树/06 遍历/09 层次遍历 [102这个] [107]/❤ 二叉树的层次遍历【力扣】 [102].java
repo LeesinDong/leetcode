@@ -9,6 +9,7 @@ class Solution {
         queue.offer(root);
         while (!queue.isEmpty()) {
             List<Integer> level = new ArrayList<Integer>();
+            // size 必须在这里写，如果在for中queue.size()会不断的变化
             int currentLevelSize = queue.size();
             for (int i = 1; i <= currentLevelSize; ++i) {
                 TreeNode node = queue.poll();

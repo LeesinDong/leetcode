@@ -1,6 +1,6 @@
 class Solution {
     // 前缀和
-    // 最终解法
+    // ************************************最终解法: 前缀和+map(sum[i], time)
     public int subarraySum(int[] nums, int k) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -25,7 +25,7 @@ class Solution {
         // 为什么0 ？ 例子  [1, 2, 3]  k = 1, nums[0] - 1 = 0 需要有一个0被contains到
         // [nums[i], 次数]
         // map.put(0, 1);
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < sum.length; i++) {
             // 这个if一定在上面，因为，
             // [1] k = 0 本应该结果0，但是结果2
             // {0, 1}
@@ -34,13 +34,14 @@ class Solution {
             // 0  1    re 0
             // re 1    0 1
             // nums[i] - k 即 一定存在 nums[x] - nums[y] = k，即中间某几个加起来等于
-            if (map.containsKey(nums[i] - k)) {
-                answer += map.get(nums[i] - k);
+            if (map.containsKey(sum[i] - k)) {
+                answer += map.get(sum[i] - k);
             }
             // 例子[1, 2, 2, 3]  没有增长的情况
             // 有的话再次刷到 + 1，没有就是1
-            time = map.containsKey(nums[i]) ? map.get(nums[i]) + 1 : 1;
-            map.put(nums[i], time);
+            // ******************************上面取出的是sum[i] - k ，这里存的是当前遍历的 sum[i]
+            time = map.containsKey(sum[i]) ? map.get(sum[i]) + 1 : 1;
+            map.put(sum[i], time);
         }
         return answer;
     }

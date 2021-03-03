@@ -4,6 +4,7 @@ class Solution {
             return -1;
         }
         // nums.length - k 因为是从小大大排序
+        // ****************************************** nums.length - k
         return partition(nums, 0, nums.length - 1, nums.length - k);
     }
     
@@ -32,6 +33,7 @@ class Solution {
             }
         }
         // k 是 排好序后的 下标，k是永远不变的下标，为了定位到这个k
+        // ******************************************  <=
         if (k <= right) {
             // 为什么 return ？因为这个递归方法是有返回值的。
             return partition(nums, start, right, k);

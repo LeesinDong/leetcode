@@ -86,6 +86,7 @@ public class NQueens {
     public List<String> drawChessboard(List<Integer> cols) {
         List<String> chessboard = new ArrayList<>();
         for (int i = 0; i < cols.size(); i++) {
+            // sb一行
             StringBuilder sb = new StringBuilder();
             for (int j = 0; j < cols.size(); j++) {
                 sb.append(j == cols.get(i) ? 'Q' : '.');

@@ -5,7 +5,7 @@ class Solution {
         }
         Arrays.sort(nums);
         int total = 0;
-        for (int k = S.length - 1; k >= 2; k--) {
+        for (int k = nums.length - 1; k >= 2; k--) {
             int start = 0;
             // *************这里一定写成k - 1
             int end = k - 1;
@@ -15,7 +15,8 @@ class Solution {
                     // 最大的为k的时候，end - start 中间的都符合，start + (end - start) 中间的都是比k大的
                     // *********************total += (end - start);
                     total += (end - start);
-                    end --;
+                    // 比end大的肯定都合适，为了到达临界值 start < end，所以end--
+                    end--;
                 } else {
                     start++;
                 }

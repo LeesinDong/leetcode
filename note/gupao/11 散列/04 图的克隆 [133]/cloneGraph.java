@@ -12,9 +12,10 @@ class Solution {
         }
 
         //copy neighbors
-        for (Node n: nodes) {
-            Node newNode = mapping.get(n);
-            for (Node neighbor: n.neighbors) {
+        for (Node orignalNode: nodes) {
+            Node newNode = mapping.get(orignalNode);
+            // ********************** 把原来node的邻居给了新的node的邻居
+            for (Node neighbor: orignalNode.neighbors) {
                 Node newNeighbor = mapping.get(neighbor);
                 newNode.neighbors.add(newNeighbor);
             }
@@ -26,6 +27,7 @@ class Solution {
     public ArrayList<Node> getNodes(Node node) {
         Queue<Node> queue = new LinkedList<Node>();
         // 题目要求：每个节点值 Node.val 都是唯一的
+        // ***************************不能有重复的边
         HashSet<Node> set = new HashSet<Node>();
         queue.offer(node);
         set.add(node);

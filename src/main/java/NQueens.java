@@ -1,55 +1,72 @@
+import com.sun.tools.javac.tree.JCTree;
+
 import java.security.SecureClassLoader;
 import java.util.ArrayList;
 import java.util.List;
 
 public class NQueens {
     public static void main(String[] args) {
-      List<List<String>> result = resolveNQueue(4);
-        for (List<String> strings : result) {
-            for (String s : strings) {
-                System.out.println(s);
+        List<List<String>> result = nQueue(4);
+        for (List<String> list : result) {
+            for (String word : list) {
+                System.out.println(word);
             }
             System.out.println();
         }
     }
 
-    private static List<List<String>> resolveNQueue(int i) {
+    public static List<List<String>> nQueue(int k) {
         List<List<String>> result = new ArrayList<>();
-        if (i <= 0) {
-            result.add(new ArrayList<>());
+        if (k == 0) {
             return result;
         }
 
         List<Integer> list = new ArrayList<>();
-        dfs(result, list, i);
+        dfs(result, list, k);
         return result;
     }
 
-    private static void dfs(List<List<String>> result, List<Integer> columns, int k) {
-        if (columns.size() == k) {
-            result.add(drawChessBoard(columns));
+    private static void dfs(List<List<String>> result, List<Integer> list, int column) {
+        if (list.size() == column) {
+            result.add(drawChessBoard(list));
             return;
         }
 
-        for (int columnIndex = 0; columnIndex < k; columnIndex++) {
-            if (!invalid(columns, columnIndex)) {
+        for (int columnIndex = 0; columnIndex < column; columnIndex++) {
+            if (!invalid(list, columnIndex)) {
                 continue;
             }
 
-            columns.add(columnIndex);
-            dfs(result, columns, k);
-            columns.remove(columns.size() - 1);
+            list.add(columnIndex);
+            dfs(result, list, column);
+            list.remove(list.size() - 1);
         }
-
-
     }
 
-    private static List<String> drawChessBoard(List<Integer> columns) {
+    private static boolean invalid(List<Integer> list, int columnIndex) {
+        int row = list.size();
+        for (int rowIndex = 0; rowIndex < list.size();rowIndex ++) {
+            if (list.get(rowIndex) == columnIndex) {
+                return false;
+            }
+
+            if (rowIndex - list.get(rowIndex) == row - columnIndex) {
+                return false;
+            }
+
+            if (rowIndex + list.get(rowIndex) == row + columnIndex) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static List<String> drawChessBoard(List<Integer> list) {
         List<String> result = new ArrayList<>();
-        for (int i = 0; i < columns.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             StringBuilder sb = new StringBuilder();
-            for (int j = 0; j < columns.size(); j++) {
-                if (columns.get(i) == j) {
+            for (int j = 0; j < list.size(); j++) {
+                if (list.get(i) == j) {
                     sb.append("Q");
                 } else {
                     sb.append(".");
@@ -59,24 +76,4 @@ public class NQueens {
         }
         return result;
     }
-
-    private static boolean invalid(List<Integer> columns, int columnIndex) {
-        int row = columns.size();
-        for (int rowIndex = 0; rowIndex < row; rowIndex++) {
-            if (columns.get(rowIndex) == columnIndex) {
-                return false;
-            }
-
-            if (rowIndex - columns.get(rowIndex) == row - columnIndex) {
-                return false;
-            }
-
-            if (rowIndex + columns.get(rowIndex) == row + columnIndex) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-
 }

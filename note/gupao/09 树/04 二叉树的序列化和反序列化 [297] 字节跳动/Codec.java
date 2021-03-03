@@ -36,7 +36,7 @@ public class Codec {
 
         // 根据list进行序列化 {1,2,3,#,#,4,5}
         StringBuilder sb = new StringBuilder("{");
-        // **************************************val
+        // ************************************** val
         sb.append(list.get(0).val);//第一个先append，因为下面前面会append,
         for (int i = 1; i < list.size(); i++) {
             if (list.get(i) == null) {
@@ -57,7 +57,9 @@ public class Codec {
         }
         // String[] data = 1 2 3 # # 4 5 ，去掉了 {} 第一个和最后一个
         String[] arr = data.substring(1, data.length() - 1).split(",");
+        // 就是通过left控制的
         boolean isLeft = true;
+
         // 为什么不能是queue，因为下面的某个要重复的用，用来保存根节点的。
         List<TreeNode> list = new ArrayList<>();
         TreeNode node = new TreeNode(Integer.parseInt(arr[0]));
@@ -66,7 +68,7 @@ public class Codec {
 
         // ***********************从第一个开始
         for (int i = 1; i < arr.length; i++) {
-            // 放入左右
+            // 放入左右，并加入新的node到list
             if (!"#".equals(arr[i])) {
                 // *****************************注意这里
                 TreeNode treeNode = new TreeNode(Integer.parseInt(arr[i]));
@@ -82,6 +84,8 @@ public class Codec {
             if (!isLeft) {
                 index++;
             }
+
+            // 切换左右
             isLeft = !isLeft;
         }
         // 返回大根

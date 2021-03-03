@@ -33,6 +33,7 @@ public class Solution {
             // 绝对值 > 1 的时候，左右移动即可
             if (Math.abs(maxHeap.size() - minHeap.size()) > 1) {
                 if (minHeap.size() > maxHeap.size()) {
+                    // *********************先保存number，因为number后面会被覆盖
                     maxHeap.add(number);
                     number = minHeap.poll();
                 } else {

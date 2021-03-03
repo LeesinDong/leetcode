@@ -30,6 +30,7 @@ public class Solution {
         result.add(new ArrayList<Integer>(list));
         for (int i = pos; i < nums.length; i++) {
             list.add(nums[i]);
+            // ****************************** i + 1
             dfs(nums, result, list, i + 1);
             list.remove(list.size() - 1);
         }
