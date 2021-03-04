@@ -11,6 +11,7 @@ public class Solution {
             return result;
         }
         List<Integer> list = new ArrayList<>();
+        // ****************************************************Arrays.sort(nums);
         Arrays.sort(nums);
         dfs(nums, result, list, 0);
         return result;

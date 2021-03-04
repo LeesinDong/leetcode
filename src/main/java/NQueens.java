@@ -8,21 +8,21 @@ public class NQueens {
     public static void main(String[] args) {
         List<List<String>> result = nQueue(4);
         for (List<String> list : result) {
-            for (String word : list) {
-                System.out.println(word);
+            for (String s : list) {
+                System.out.println(s);
             }
             System.out.println();
         }
     }
 
-    public static List<List<String>> nQueue(int k) {
+    private static List<List<String>> nQueue(int i) {
         List<List<String>> result = new ArrayList<>();
-        if (k == 0) {
+        if (i == 0) {
             return result;
         }
 
         List<Integer> list = new ArrayList<>();
-        dfs(result, list, k);
+        dfs(result, list, i);
         return result;
     }
 
@@ -43,22 +43,22 @@ public class NQueens {
         }
     }
 
-    private static boolean invalid(List<Integer> list, int columnIndex) {
+    private static boolean invalid(List<Integer> list, int column) {
         int row = list.size();
-        for (int rowIndex = 0; rowIndex < list.size();rowIndex ++) {
-            if (list.get(rowIndex) == columnIndex) {
+        for (int rowIndex = 0; rowIndex < row; rowIndex++) {
+            if (list.get(rowIndex) == column) {
                 return false;
             }
 
-            if (rowIndex - list.get(rowIndex) == row - columnIndex) {
+            if (rowIndex - list.get(rowIndex) == row - column) {
                 return false;
             }
 
-            if (rowIndex + list.get(rowIndex) == row + columnIndex) {
+            if (rowIndex + list.get(rowIndex) == row + column) {
                 return false;
             }
         }
-        return true;
+        return  true;
     }
 
     private static List<String> drawChessBoard(List<Integer> list) {
@@ -66,11 +66,7 @@ public class NQueens {
         for (int i = 0; i < list.size(); i++) {
             StringBuilder sb = new StringBuilder();
             for (int j = 0; j < list.size(); j++) {
-                if (list.get(i) == j) {
-                    sb.append("Q");
-                } else {
-                    sb.append(".");
-                }
+                sb.append(list.get(i) == j ? "Q" : '.');
             }
             result.add(sb.toString());
         }

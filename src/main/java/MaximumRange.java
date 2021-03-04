@@ -13,15 +13,15 @@ public class MaximumRange {
 			return 0;
 		}
 
-		Stack<Integer> stack = new Stack<>();
 		int[] sum = new int[nums.length + 1];
 		for (int i = 1; i < sum.length; i++) {
 			sum[i] = sum[i - 1] + nums[i - 1];
 		}
+		Stack<Integer> stack = new Stack<>();
 		int max = 0;
 
 		for (int i = 0; i < nums.length; i++) {
-			while (!stack.isEmpty() && nums[stack.peek()] > nums[i]) {
+			while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
 				int index = stack.pop();
 				int left = i;
 				int right = i;

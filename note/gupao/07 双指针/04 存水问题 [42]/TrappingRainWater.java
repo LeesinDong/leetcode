@@ -15,7 +15,7 @@ public int trap(int[] height) {
             // 左边小，不管中间有没有，右边一定被挡住，算左边的存水即可，反之亦然
             // ********************if
             if (leftHeight < rightHeight) {
-                // ************************1 比较的是leftHeight leftHeight才会最大 2 left + 1
+                // ************************1 比较的是leftHeight leftHeight才会最大 2 left + 1（永远是当前的高度和下一个比较而不是当前的）
                 if (leftHeight > height[left + 1]) {
                     // *********************leftHeight -
                     sum += leftHeight - height[left + 1];

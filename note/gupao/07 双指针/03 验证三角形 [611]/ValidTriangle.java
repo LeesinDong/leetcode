@@ -5,6 +5,7 @@ class Solution {
         }
         Arrays.sort(nums);
         int total = 0;
+        // ***********************************一定注意从大往小的时候 k--
         for (int k = nums.length - 1; k >= 2; k--) {
             int start = 0;
             // *************这里一定写成k - 1

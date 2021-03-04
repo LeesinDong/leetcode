@@ -32,6 +32,7 @@ public class SortList {
         while (newHead != null) {
             System.out.println(newHead.val);
             newHead = newHead.next;
+
         }
     }
 
@@ -66,7 +67,7 @@ public class SortList {
 
         ListNode pre = head;
         ListNode current = head.next;
-        pre.next= null;
+        pre.next = null;
         while (current != null) {
             ListNode next = current.next;
             current.next = pre;
@@ -107,7 +108,6 @@ public class SortList {
             count++;
             head = head.next;
         }
-
         curl1.next = null;
         curl2.next = null;
         return new ListNode[]{head1, head2};

@@ -50,6 +50,7 @@ public class NQueens {
         // columnIndex是一行中的每一个
         for (int columnIndex = 0; columnIndex < n; columnIndex++) {
             // columns 之前加入的 多行[里面有一个皇后]  columnIndex 新的一行的第几列
+            // ********************************************************** 传入columnIndex 而不是n，因为校验的是当前的 坐标，而不是固定值
             if (!isValid(columns, columnIndex)) {
                 continue;
             }

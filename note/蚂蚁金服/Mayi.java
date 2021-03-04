@@ -12,20 +12,24 @@ import java.util.concurrent.ConcurrentHashMap;
 // 答案：1 模仿CHM实现 2 直接用CHM
 public class Mayi {
     public Map genMap(int n, int m) {
+        // 保存1000个元素
         List<Integer> values = new ArrayList<>(m);
         for (int i = 0; i < m; i++) {
             values.add(i);
         }
-
+        // 初始化容器
         List<List<Integer>> segments = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             List<Integer> list = new ArrayList<>();
             segments.add(list);
         }
+
+        // 分成n段，一段处理一部分，hash取模放入元素
         for (Integer value : values) {
             segments.get(value % n).add(value);
         }
 
+        // 多线程进行处理
         Map<Integer, Integer> map = new ConcurrentHashMap<>(m);
         for (int i = 0; i < n; i++) {
             int j = i;

@@ -53,8 +53,10 @@ class Solution {
                 // ****************************************** >=0
                 if (newX >= 0 && newY >= 0 && newX < grid.length && newY < grid[0].length && !visited[newX][newY]) {
                     if (grid[newX][newY] == '1') {
+                        // **************************************** 1 queue.offer 2 isLand设置为true(走过的就不往queue里面放了);
                         xQueue.offer(newX);
                         yQueue.offer(newY);
+                        // ****************************************别忘了这句话
                         visited[newX][newY] = true;
                     }
                 }

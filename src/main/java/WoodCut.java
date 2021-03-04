@@ -9,40 +9,44 @@ public class WoodCut {
         System.out.println(woodcut(L, 7));
     }
 
-    public static int woodcut(int[] L, int k) {
+    private static int woodcut(int[] L, int k) {
+        if (L == null || L.length == 0) {
+            return -1;
+        }
+
         int start = 0;
         int end = getMax(L);
         int mid = 0;
         while (start + 1 < end) {
             mid = start + (end - start) / 2;
-            if (getPieces(mid, L) >= k) {
+            if (getPieces(L, mid) >= k) {
                 start = mid;
             } else {
                 end = mid;
             }
         }
 
-        if (getPieces(start, L) >= k) {
+        if (getPieces(L, start) >= k) {
             return start;
         }
 
-        if (getPieces(end, L) >= k) {
+        if (getPieces(L, end) >= k) {
             return end;
         }
         return -1;
     }
 
-    private static int getPieces(int length, int[] L) {
+    private static int getPieces(int[] l, int length) {
         int result = 0;
-        for (int i : L) {
+        for (int i : l) {
             result += i / length;
         }
         return result;
     }
 
-    private static int getMax(int[] l) {
+    private static int getMax(int[] L) {
         int max = 0;
-        for (int i : l) {
+        for (int i : L) {
             max = Math.max(max, i);
         }
         return max;

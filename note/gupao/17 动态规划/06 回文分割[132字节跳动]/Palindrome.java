@@ -21,6 +21,7 @@ class Solution {
         // for (int i = 1; i <= s.length(); i++) {
         for (int i = 0; i <= s.length(); i++) {
             // j < i 不是 <= 因为i可以到s.length() 但是pali[j] 是不可以的。会数组越界
+            // j < s.length 也行，就是说j可以从s的第一个char到最后一个char
             for (int j = 0; j < i; j++) {
                 // 如果 j到i -1 是回文，i是主调，还是从i开始往前推的，往前是根据j
                 // i - 1，因为pali从0开始，j没有 -1 ，因为j是为了往前拓展的。pali[i - 1] 相当于mincut[i]

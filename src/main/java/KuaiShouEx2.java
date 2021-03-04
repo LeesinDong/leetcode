@@ -1,4 +1,6 @@
 
+import com.sun.org.apache.xpath.internal.WhitespaceStrippingElementMatcher;
+
 import java.time.chrono.IsoEra;
 import java.util.*;
 
@@ -23,23 +25,22 @@ public class KuaiShouEx2 {
         // v_8
         // v_9
 
-        List<String> list = getRecommendedList(picAndVideoList, 2);
-        for (String string : list) {
-            System.out.println(string);
+        List<String> result = getRecommendedList(picAndVideoList, 2);
+        for (String word : result) {
+            System.out.println(word);
         }
     }
 
-    private static List<String> getRecommendedList(List<String> picAndVideoList, int i) {
+    private static List<String> getRecommendedList(List<String> picAndVideoList, int k) {
+        List<String> result = new ArrayList<>();
         if (picAndVideoList == null || picAndVideoList.size() == 0) {
-            return Collections.emptyList();
+            return result;
         }
 
-        List<String> result = new ArrayList<>();
+        boolean firstPic = false;
         Queue<String> picQueue = new LinkedList<>();
         Queue<String> videoQueue = new LinkedList<>();
-        boolean firstPic = false;
         int index = 0;
-
         while (!firstPic && index < picAndVideoList.size()) {
             if (isVideo(picAndVideoList.get(index))) {
                 result.add(picAndVideoList.get(index));
@@ -60,7 +61,7 @@ public class KuaiShouEx2 {
 
         int currentIndex = result.size();
         while (!picQueue.isEmpty() && !videoQueue.isEmpty()) {
-            if (currentIndex > i) {
+            if (currentIndex >= k) {
                 result.add(picQueue.poll());
                 currentIndex = 0;
             } else {
@@ -73,7 +74,7 @@ public class KuaiShouEx2 {
             result.add(videoQueue.poll());
         }
 
-        if (!picQueue.isEmpty() && currentIndex > i) {
+        if (!picQueue.isEmpty() && currentIndex >= k) {
             result.add(picQueue.poll());
         }
 
@@ -81,7 +82,7 @@ public class KuaiShouEx2 {
     }
 
     private static boolean isVideo(String s) {
-        if (s.indexOf('v') != -1) {
+        if (s.indexOf("v") != -1) {
             return true;
         } else {
             return false;

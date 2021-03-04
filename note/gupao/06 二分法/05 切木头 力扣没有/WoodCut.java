@@ -19,6 +19,7 @@ public class WoodCut {
 			int pieces = getPieces(L, mid);
 			// 木头的个数 >= k 即满足条件，就让它变得大一点
 			if (pieces >= k) {
+				// ************************************ 想让结果变现，mid应该变大。
 				start = mid;
 			} else  {
 				end = mid;

@@ -23,6 +23,7 @@ class UnionFind {
         int fa = father.get(x);
         while (fa != father.get(fa)) {
             temp = father.get(fa);
+            // father.put(fa, parent); father.put(fa, temp); 皆可 ，为了将fa直接通道最上面的parent点(上面while已经到了最上面顶点)
             father.put(fa, parent);
 
             fa = temp;

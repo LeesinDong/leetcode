@@ -10,31 +10,30 @@ import java.util.concurrent.ConcurrentHashMap;
 // 要求：保证最终map的size为m，并尽量考虑高性能。
 public class Mayi {
     public Map genMap(int n, int m) {
-        List<Integer> values = new ArrayList<>(m);
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < m; i++) {
-            values.add(i);
+            list.add(i);
         }
 
         List<List<Integer>> segments = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            List<Integer> list = new ArrayList<>();
-            segments.add(list);
+            List<Integer> list1 = new ArrayList<>();
+            segments.add(list1);
         }
 
-        for (Integer value : values) {
-            segments.get(value % n).add(value);
+        for (Integer integer : list) {
+            segments.get(integer % n).add(integer);
         }
 
-        Map<Integer, Integer> map = new ConcurrentHashMap<>(m);
+        ConcurrentHashMap<Integer, Integer> chm = new ConcurrentHashMap<>();
         for (int i = 0; i < n; i++) {
             int j = i;
             Thread t = new Thread(() -> {
-                for (Integer value : segments.get(j)) {
-                    map.put(value, value);
+                for (int value : segments.get(j)) {
+                    chm.put(value, value);
                 }
             });
-            t.start();
         }
-        return map;
+        return chm;
     }
 }
