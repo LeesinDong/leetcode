@@ -40,6 +40,7 @@ class UnionFind {
 
     // 我认为这里应该是 column，因为这里其实是要一个最后的数字：行*每行多少+最后一行第几个。  不过为一个确定一个数字就行row也可以
     // 原来：public int convertedId(int x, int y, int row) {
+    // ******************************这里是column 不是row，因为x行*一样几个，再加上最后一行的y个
     public int convertId(int x, int y, int column) {
         return x * column + y;
     }
@@ -61,8 +62,8 @@ class Solution {
 
         for (int u = 0; u < positions.length; u++) {
             int[] row = positions[u];
-            int x = xy[0];
-            int y = xy[1];
+            int x = row[0];
+            int y = row[1];
             // 如果是true，就是之前已经处理过了，处理过的，就不对count进行修改了，因为isLand里面这段里面的本质就是修改count
             if (!isLand[x][y]) {
                 isLand[x][y] = true;
