@@ -10,6 +10,7 @@ public class 链表排序归并排序 {
     public ListNode sortList(ListNode head) {
         // **************** 别忘了 head.next == null 只有一个head不需要排序！！！！，否则递归出不来了
         if (head == null || head.next == null) {
+            // *******************************一定要返回head，没事别人会null -1，只有0 head不行了再返回
             return head;
         }
         ListNode mid = getMid(head);

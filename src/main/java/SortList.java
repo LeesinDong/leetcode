@@ -1,5 +1,7 @@
 import sun.util.resources.ar.CurrencyNames_ar_TN;
 
+import java.util.List;
+
 public class SortList {
     public static ListNode init() {
         ListNode node1 = new ListNode(1);
@@ -88,25 +90,25 @@ public class SortList {
         ListNode curl2 = null;
         int count = 1;
         while (head != null) {
-            if (count % 2 == 1) {
-                if (curl1 == null) {
-                    curl1 = head;
-                    head1 = curl1;
-                } else {
-                    curl1.next = head;
-                    curl1 = curl1.next;
-                }
-            } else {
-                if (curl2 == null) {
-                    curl2 = head;
-                    head2 = curl2;
-                } else {
-                    curl2.next = head;
-                    curl2 = curl2.next;
-                }
-            }
-            count++;
-            head = head.next;
+           if (count % 2 == 1) {
+               if (curl1 == null) {
+                   curl1 = head;
+                   head1 = curl1;
+               } else {
+                   curl1.next = head;
+                   curl1 = curl1.next;
+               }
+           } else {
+               if (curl2 == null) {
+                   curl2 = head;
+                   head2 = curl2;
+               } else {
+                   curl2.next = head;
+                   curl2 = curl2.next;
+               }
+           }
+           count++;
+           head = head.next;
         }
         curl1.next = null;
         curl2.next = null;

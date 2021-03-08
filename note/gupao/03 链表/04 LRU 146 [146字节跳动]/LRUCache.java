@@ -32,6 +32,7 @@ class LRUCache {
             return -1;
         }
         CacheNode current = valNodeMap.get(key);
+        // **********************************这里不要偷懒想一想再写
         current.prev.next = current.next;
         current.next.prev = current.prev;
         moveToTail(current);
