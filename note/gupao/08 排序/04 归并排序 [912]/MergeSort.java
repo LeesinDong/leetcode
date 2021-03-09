@@ -20,7 +20,7 @@ public class SortEx {
 	public static void merge(int[] array, int start, int mid, int end, int[] temp) {
 		int left = start;
 		int right = mid + 1;
-		// **********************这里是start，不是0，这种在往回装的temp中浪费了index前面的，而不是从0开始的，先这么记住把
+		// ********************** 这里是start，不是0，这种在往回装的temp中浪费了index前面的，而不是从0开始的，先这么记住把
 		int index = start;
 		// ********************** left <= mid 是小于某个值作为条件
 		while (left <= mid && right <= end) {

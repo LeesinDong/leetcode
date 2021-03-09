@@ -27,7 +27,7 @@ class Trie {
             if (!children.containsKey(arr[i])) {
                 TrieNode node = new TrieNode(arr[i]);
                 current = node;
-                // *******************必须先放children里面东西，下面在膝盖children指针，要不然会放错地方。放到了下面了。
+                // *******************必须先放children里面东西，下面在修改children指针，要不然会放错地方。放到了下面了。
                 children.put(arr[i], node);
             } else {
                 TrieNode node = children.get(arr[i]);

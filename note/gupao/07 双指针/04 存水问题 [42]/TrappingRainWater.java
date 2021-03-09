@@ -17,7 +17,7 @@ public int trap(int[] height) {
             if (leftHeight < rightHeight) {
                 // ************************1 比较的是leftHeight leftHeight才会最大 2 left + 1（永远是当前的高度和下一个比较而不是当前的）
                 if (leftHeight > height[left + 1]) {
-                    // *********************leftHeight -
+                    // *********************leftHeight - 肯定是最高 - 当前的
                     sum += leftHeight - height[left + 1];
                 } else {
                     leftHeight = height[left + 1];
