@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/04 存水问题 [42]/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序 [912]/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/08 排序/04 归并排序 [912]/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/15 有序树/01 提示词  [208]/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Mayi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Mayi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/SortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/05 较小的三数之和/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/05 较小的三数之和/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,7 +147,7 @@
       <workItem from="1615104000399" duration="1886000" />
       <workItem from="1615191017155" duration="4102000" />
       <workItem from="1615251928347" duration="1279000" />
-      <workItem from="1615255995234" duration="1930000" />
+      <workItem from="1615255995234" duration="3041000" />
     </task>
     <task id="LOCAL-00002" summary="fix">
       <created>1613711487295</created>
@@ -280,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615218976932</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix">
+      <created>1615265656398</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1615265656398</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

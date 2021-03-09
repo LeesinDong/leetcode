@@ -15,6 +15,7 @@ public class Test {
         while (left < right) {
             if (nums[left] + nums[right] < target) {
                 sum += right - left;
+                // 找到了一个结果，left++找下个结果
                 left++;
             } else {
                 right--;
