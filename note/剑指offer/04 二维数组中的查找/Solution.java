@@ -10,6 +10,7 @@ class Solution {
         int row = 0; 
         int column = columns - 1;
 
+        // 为什么column >= 0 不是 < colums？因为column-- column从最后一个开始往前的
         while (column >=0 && row < rows) {
             if (matrix[row][column] == target) {
                 return true;
