@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="fix">
-      <change afterPath="$PROJECT_DIR$/note/gupao/03 链表/抖音两道/链表排序 [148]/链表快排.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/03 链表/重排链表 [143]/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/03 链表/链表交点/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/07 双指针/06 两数之和[1]/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/09 树/重建二叉树 [剑指offer07]/[栈]Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/09 树/重建二叉树 [剑指offer07]/[递归]Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/18 数组/两个数组的交集[349][350]/349/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/18 数组/两个数组的交集[349][350]/350/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/18 数组/合并两个有序数组 [88]/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/其他/Pow(x, n) [50]/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/gupao/其他/阿拉伯数字转汉字/Cast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/剑指offer/07 重建二叉树/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/原版.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/自己.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/链表快排.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/[206]反转链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/[206]反转链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/cn/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/03 链表/其他/判断链表中是否有环 牛客/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/03 链表/其他/判断链表中是否有环 牛客/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/gupao/07 双指针/05 较小的三数之和[259]/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/07 双指针/05 较小的三数之和[259]/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/SortList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +30,18 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/restock/service/RestockServiceRpc.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/ServletResponse.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1ofuS3kRg41nS4hO0qwVmNcmxr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -69,8 +56,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -117,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SortList" />
-        <item itemvalue="Application.Cast" />
         <item itemvalue="Application.WoodCut" />
+        <item itemvalue="Application.SortList" />
         <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.KuaiShouEx2" />
+        <item itemvalue="Application.Cast" />
       </list>
     </recent_temporary>
   </component>
