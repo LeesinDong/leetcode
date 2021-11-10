@@ -11,9 +11,13 @@ class Solution {
         if (head == null) {
             return null;
         }
+
         ListNode prev = head;
         ListNode current = head.next;
         prev.next = null;
+
+        // 为什么结束条件是这个？current、pre一次往后移动一个，一定会在某个时刻，current移出去了，这时候就返回pre（pre在里面）
+        // 为什么不是pre.next? pre.next指向的是前面的那个，通过上一次循环的连接，上次的current.next一定不是null
         while (current != null) {
             ListNode next = current.next;
             current.next = prev;

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="fix" />
+    <list default="true" id="3d77af2a-f1b8-4705-8110-0f11eb9f544b" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转 [206]/ReverseLinkedList1.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转 [206]/ReverseLinkedList1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转二 [92]/ReverseLinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转二 [92]/ReverseLinkedList2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,16 +34,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/ServletResponse.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/restock/service/RestockServiceRpc.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转 [206]/ReverseLinkedList1.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/03 链表/01 链表反转/链表反转二 [92]/ReverseLinkedList2.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/03 链表/04 LRU 146 [146字节跳动]/LRUCache.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/04 栈/01 括号验证  [20]/validParenthese.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/04 栈/02 最小栈 [155]/MinStack.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/note/gupao/04 栈/03 区间最大值 力扣没有字节跳动/MaximumRange.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1ofuS3kRg41nS4hO0qwVmNcmxr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -56,8 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
