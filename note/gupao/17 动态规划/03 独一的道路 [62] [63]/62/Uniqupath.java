@@ -11,7 +11,6 @@ public int uniquePaths(int m, int n) {
         for (int i = 0; i < n; i++) {
             path[0][i] = 1;
         }
-
         // 动归计算
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {

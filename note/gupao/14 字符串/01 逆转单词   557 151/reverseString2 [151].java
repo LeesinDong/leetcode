@@ -19,6 +19,7 @@ class Solution {
             sb.append(words[i] + " ");
         }
 
+
         return sb.toString().trim();
     }
 }

@@ -13,7 +13,7 @@ public class Solution {
         List<Integer> left = preorderTraversal(root.left);
         List<Integer> right = preorderTraversal(root.right);
        
-	result.addAll(left);
+	    result.addAll(left);
         result.add(root.val);
         result.addAll(right);
         return result;

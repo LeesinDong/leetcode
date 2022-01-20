@@ -13,9 +13,9 @@ public class Solution {
         List<Integer> left = preorderTraversal(root.left);
         List<Integer> right = preorderTraversal(root.right);
        
-	result.addAll(left);
+	    result.addAll(left);
         result.addAll(right);
-	result.add(root.val);
+	    result.add(root.val);
         return result;
     }
 }

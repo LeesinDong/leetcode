@@ -6,13 +6,12 @@ class Solution {
         // n = 4 -> 5(ways 1111,112,121,211,22)
         // n = 5 -> 8(ways 11111,1112,1121,1211,2111,221,212,122)
 
-        // 看这个就行了
+        // base case
         if (n <= 3) {
             return n;
         }
 
         int[] steps = new int[3];
-        // **************************初始化
         steps[0] = 1;
         steps[1] = 2;
         for (int i = 2; i < n; i++) {
